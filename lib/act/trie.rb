@@ -25,14 +25,15 @@ module ACT
     def recursive_search
       vertex = @trie
       result_vertices = []
-      p @trie
       yield.each do |word|
         sub_vertices = []
         word.each.with_index do |char, index|
           if vertex.get_child(char)
             vertex = vertex.get_child(char)
             sub_vertices << vertex.char
-            result_vertices << map_from_chain(back_trace(vertex)) unless vertex.end_indexes.empty?
+            unless vertex.end_indexes.empty?
+              result_vertices << map_from_chain(back_trace(vertex))
+            end
           end
         end
       end
