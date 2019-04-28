@@ -42,15 +42,15 @@ module ACT
 
     def back_trace(vertex)
       result = [vertex]
-      while vertex.parent != nil
-        result << vertex.parent
+      until vertex.parent.nil?
+        result << vertex.parent unless vertex.parent.char.nil?
         vertex = vertex.parent
       end
       result.reverse
     end
 
     def map_from_chain(chain)
-      chain.map{|vertex| {char: vertex.char, indexes: vertex.end_indexes}}
+      chain.map { |vertex| { char: vertex.char, indexes: vertex.end_indexes } }
     end
 
     def build_trie
