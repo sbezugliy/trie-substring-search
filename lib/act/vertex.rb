@@ -2,8 +2,8 @@
 module ACT
   # Trie vertex class
   class Vertex
-    attr_reader :parent
-    attr_accessor :end_indexes, :char, :children
+    attr_reader :parent, :children
+    attr_accessor :end_indexes, :char
 
     def initialize(parent = nil)
       @char = nil
@@ -13,13 +13,17 @@ module ACT
     end
 
     def add_child(char, end_index)
-      child = @children.find { |c| c.char == char }
+      child = get_child(char)
       if child
-        @end_indexes << end_index unless end_index.nil?
+        child.end_indexes << end_index unless end_index.nil?
         child
       else
         init_subchild(char, end_index)
       end
+    end
+
+    def get_child(char)
+      @children.find { |c| c.char == char }
     end
 
     private
@@ -31,5 +35,6 @@ module ACT
       @children << child
       child
     end
+
   end
 end
