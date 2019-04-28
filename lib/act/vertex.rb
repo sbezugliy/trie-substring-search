@@ -1,33 +1,35 @@
+# ACT module
 module ACT
+  # Trie vertex class
   class Vertex
-    attr_reader :parent, :childs
-    attr_accessor :end_indexes, :char
+    attr_reader :parent
+    attr_accessor :end_indexes, :char, :children
 
-    def initialize(root = nil)
-      @char=nil
-      @parent = root
-      @childs = []
+    def initialize(parent = nil)
+      @char = nil
+      @parent = parent
+      @children = []
       @end_indexes = []
     end
 
     def add_child(char, end_index)
-      if @childs.find{|c| c.char == char} 
-        child = self
+      child = @children.find { |c| c.char == char }
+      if child
+        @end_indexes << end_index unless end_index.nil?
+        child
       else
-        child = init_subchild(char)
+        init_subchild(char, end_index)
       end
-      child.end_indexes << end_index if end_index
-      child
-    end
-    
-    private
-    
-    def init_subchild(char)
-      child = self.class.new(self)
-      child.char = char
-      @childs << child
-      child
     end
 
+    private
+
+    def init_subchild(char, end_index)
+      child = self.class.new(self)
+      child.char = char
+      child.end_indexes << end_index unless end_index.nil?
+      @children << child
+      child
+    end
   end
 end

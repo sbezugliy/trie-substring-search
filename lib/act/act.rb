@@ -1,4 +1,6 @@
-require "act/version"
-require "act/trie"
-require "act/vertex"
-module ACT;end
+require 'act/version'
+require 'act/trie'
+require 'act/vertex'
+
+# Main module for Aho-Corasick Trie
+module ACT; end
