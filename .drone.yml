@@ -13,7 +13,7 @@ steps:
   - name: test
     image: ruby
     environment:
-      CODECOV:
+      CODECOV_TOKEN:
         from_secret: CODECOV_TOKEN
       CI: true
     volumes:
