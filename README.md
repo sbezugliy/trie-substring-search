@@ -8,8 +8,11 @@
 ### To be done:
 
     - TODO: Text parser
-    - TODO: Suffix references is not implementd, just now it contains full syntax tree. So, it is less memory efficient then original Aho-Corasick algorithm.
-    - TODO: Maybe, need post optimization of vertex connections, and some Parallelism | pre optimization of an dictionary on trie build stage.
+    - TODO: Suffix references is not implemented. Just now it contains full syntax tree, so it is less memory efficient then original Aho-Corasick algorithm.
+    - TODO: Maybe, will be good to implement next features for trie build stage:
+      -  post optimization of vertex connections, creating suffixes
+      -  some parallelism
+      -  pre optimization of an dictionary on trie build stage.
 
 ## Installation
 
@@ -38,7 +41,7 @@ Or install it yourself as:
     trie.parse("he their them height have then their shelter")
 ```
 
-Index of word in dictionary can be used to get use additional array with external data. If dictionary contain duplicates, then you will get few indexes in result.
+Index of word in dictionary can be used to get relations with additional array with external data(or collection, or can be easily replaced by foreign key in the future). If dictionary contain duplicates, then you will get few indexes in result.
 
 ## Development
 
