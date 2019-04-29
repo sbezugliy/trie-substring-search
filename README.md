@@ -1,4 +1,15 @@
-# Aho-Corasick Trie Substri Installation
+# Aho-Corasick Trie Substring Search
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/a491e842aac7b4f62751/maintainability)](https://codeclimate.com/github/sbezugliy/aho-corasick-trie-search/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/a491e842aac7b4f62751/test_coverage)](https://codeclimate.com/github/sbezugliy/aho-corasick-trie-search/test_coverage)
+
+### To be done:
+
+TODO: Text parser
+TODO: Suffix references, now it contain full syntax tree. So just now it is less memory efficient then original Aho-Corasick algorithm
+TODO: Maybe need post optimization of vertex connections
+
+## Installation
 
 Add this line to your application's Gemfile:
 
@@ -13,11 +24,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install aho-corasick-trie-search
-
-## To be done:
-
-TODO: Suffix references, now it contain full syntax tree. So just now it is less memory efficient then original Aho-Corasick algorithm
-TODO: Maybe need post optimization of vertex connections
 
 ## Usage
 
