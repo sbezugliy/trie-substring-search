@@ -50,5 +50,15 @@ RSpec.describe ACT::Trie do
       inds = dict.trie.get_child('d').get_child('f').end_indexes
       expect(inds).to eq(df_vert_indexes)
     end
+
+    it 'backtrace should return array of vertexes of word' do
+      deep_vertex = dict.trie.get_child('d').get_child('f').get_child('e')
+      backtrace = dict.send(:back_trace, deep_vertex)
+      expect(backtrace).to all(be_an_instance_of(ACT::Vertex))
+      expect(backtrace).to have_exactly(3).items
+      expect(backtrace[0].char).to eq('d')
+      expect(backtrace[1].char).to eq('f')
+      expect(backtrace[2].char).to eq('e')
+    end
   end
 end

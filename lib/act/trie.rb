@@ -37,7 +37,7 @@ module ACT
           end
         end
       end
-      p result_vertices
+      result_vertices
     end
 
     def back_trace(vertex)

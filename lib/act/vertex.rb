@@ -35,6 +35,5 @@ module ACT
       @children << child
       child
     end
-
   end
 end
