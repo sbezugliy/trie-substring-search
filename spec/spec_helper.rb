@@ -1,7 +1,6 @@
 require 'bundler/setup'
 require 'rspec/collection_matchers'
 require 'simplecov'
-require 'simplecov-console'
 require 'act/act'
 require 'act/trie'
 require 'act/vertex'
@@ -18,5 +17,12 @@ RSpec.configure do |config|
   end
 end
 
-SimpleCov.formatter = SimpleCov::Formatter::Console
+if ENV['CI'] == 'true'
+  require 'codecov'
+  SimpleCov.formatter = SimpleCov::Formatter::Codecov
+else
+  require 'simplecov-console'
+  SimpleCov.formatter = SimpleCov::Formatter::Console
+end
 SimpleCov.start
+
