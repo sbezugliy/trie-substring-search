@@ -7,9 +7,9 @@
 
 ### To be done:
 
-TODO: Text parser
-TODO: Suffix references, now it contain full syntax tree. So just now it is less memory efficient then original Aho-Corasick algorithm
-TODO: Maybe need post optimization of vertex connections
+    - TODO: Text parser
+    - TODO: Suffix references is not implementd, just now it contains full syntax tree. So, it is less memory efficient then original Aho-Corasick algorithm.
+    - TODO: Maybe, need post optimization of vertex connections, and some Parallelism | pre optimization of an dictionary on trie build stage.
 
 ## Installation
 
