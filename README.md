@@ -7,13 +7,12 @@
 
 ### To be done:
 
-    - TODO: Text parser
-    - TODO: Mode providing ability to return whole words, what contain substing from dictionary as result
+    - TODO: Mode providing ability to return whole words, that contain substring from dictionary
     - TODO: Suffix references is not implemented. Just now it contains full syntax tree, so it is less memory efficient then original Aho-Corasick algorithm.
     - TODO: Maybe, will be good to implement next features for trie build stage:
       -  post optimization of vertex connections, creating suffixes
       -  some parallelism
-      -  pre optimization of an dictionary on trie build stage.
+      -  pre optimization of a dictionary.
 
 ## Installation
 
@@ -39,7 +38,7 @@ Or install it yourself as:
     # Initialize trie
     trie = ACT::Trie.new(dictionary)
     # Parse text and receive array of all occurrences of words in texts with indexes of word in dictionary
-    trie.parse("he their them height have then their shelter") # WIP!
+    trie.parse("he their them height have then their shelter")
     # Get end vertex of word 'they'
     vertex = trie.get_child('t').get_child('h').get_child('e').get_child('y')
     # get array of indexes of word
