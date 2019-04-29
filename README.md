@@ -8,6 +8,7 @@
 ### To be done:
 
     - TODO: Text parser
+    - TODO: Mode providing ability to return whole words, what contain substing from dictionary as result
     - TODO: Suffix references is not implemented. Just now it contains full syntax tree, so it is less memory efficient then original Aho-Corasick algorithm.
     - TODO: Maybe, will be good to implement next features for trie build stage:
       -  post optimization of vertex connections, creating suffixes

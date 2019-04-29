@@ -53,7 +53,7 @@ RSpec.describe ACT::Trie do
 
     it 'backtrace should return array of vertexes of word' do
       deep_vertex = dict.trie.get_child('d').get_child('f').get_child('e')
-      backtrace = dict.send(:back_trace, deep_vertex)
+      backtrace = dict.send(:backtrace, deep_vertex)
       expect(backtrace).to all(be_an_instance_of(ACT::Vertex))
       expect(backtrace).to have_exactly(3).items
       expect(backtrace[0].char).to eq('d')
