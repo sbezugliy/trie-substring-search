@@ -1,5 +1,4 @@
-
-lib = File.expand_path('../lib', __FILE__)
+lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require './lib/act/version'
 require './lib/act/act'
@@ -11,8 +10,10 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Sergey Bezugliy']
   spec.email         = ['s.bezugliy@gmail.com']
 
-  spec.summary       = 'Ruby library realising Aho-Corasick substring search algorithm}'
-  spec.description   = 'This gem provides ruby library with realisation of Aho-Corasick substring search algorithm, with linear complication.'
+  spec.summary       = "'Ruby library realising Aho-Corasick substring'
+  'search algorithm'"
+  spec.description   = " 'This gem provides ruby library with realisation'
+   of Aho-Corasick substring search algorithm, with linear complication.'"
   spec.homepage      = 'https://codenv.top/projects/aho-corasick-trie'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -41,6 +42,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'rspec-collection_matchers', '~> 1.1.0'
+  spec.add_development_dependency 'rubocop'
+  spec.add_development_dependency 'rubocop-performance'
   spec.add_development_dependency 'simplecov'
   spec.add_development_dependency 'simplecov-console'
 end

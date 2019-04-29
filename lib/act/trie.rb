@@ -14,8 +14,8 @@ module ACT
 
     def parse(text)
       recursive_search do
-        text.split(" ").map do |word|
-          word.split("")
+        text.split(' ').map do |word|
+          word.split('')
         end
       end
     end
@@ -27,13 +27,11 @@ module ACT
       result_vertices = []
       yield.each do |word|
         sub_vertices = []
-        word.each.with_index do |char, index|
+        word.each.with_index do |char, _index|
           if vertex.get_child(char)
             vertex = vertex.get_child(char)
             sub_vertices << vertex.char
-            unless vertex.end_indexes.empty?
-              result_vertices << map_from_chain(back_trace(vertex))
-            end
+            result_vertices << map_from_chain(back_trace(vertex)) unless vertex.end_indexes.empty?
           end
         end
       end
