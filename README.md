@@ -5,15 +5,6 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a491e842aac7b4f62751/maintainability)](https://codeclimate.com/github/sbezugliy/aho-corasick-trie-search/maintainability)
 [![codecov](https://codecov.io/gh/sbezugliy/aho-corasick-trie-search/branch/master/graph/badge.svg)](https://codecov.io/gh/sbezugliy/aho-corasick-trie-search)
 
-### To be done:
-
-    - TODO: Mode providing ability to return whole words, that contain substring from dictionary
-    - TODO: Suffix references is not implemented. Just now it contains full syntax tree, so it is less memory efficient then original Aho-Corasick algorithm.
-    - TODO: Maybe, will be good to implement next features for trie build stage:
-      -  post optimization of vertex connections, creating suffixes
-      -  some parallelism
-      -  pre optimization of a dictionary.
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -68,8 +59,6 @@ Or install it yourself as:
     vertex.end_indexes
     # => [1, 8]
 
-
-
 ```
 
 Index of word in dictionary can be used to get relations with additional array with external data(or collection, or can be easily replaced by foreign key in the future). If dictionary contain duplicates, then you will get few indexes in result.
@@ -86,3 +75,12 @@ Index of word in dictionary can be used to get relations with additional array w
 ## Development
 
 ## Contributing
+
+### TBD Improvements:
+
+    - TODO: Mode providing ability to return whole words, that contain substring from dictionary
+    - TODO: Suffix references is not implemented. Just now it contains full syntax tree, so it is less memory efficient then original Aho-Corasick algorithm.
+    - TODO: Maybe, will be good to implement next features for trie build stage:
+      -  post optimization of vertex connections, creating suffixes
+      -  some parallelism
+      -  pre optimization of a dictionary.
