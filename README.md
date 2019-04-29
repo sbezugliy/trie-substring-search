@@ -38,7 +38,11 @@ Or install it yourself as:
     # Initialize trie
     trie = ACT::Trie.new(dictionary)
     # Parse text and receive array of all occurrences of words in texts with indexes of word in dictionary
-    trie.parse("he their them height have then their shelter")
+    trie.parse("he their them height have then their shelter") # WIP!
+    # Get end vertex of word 'they'
+    vertex = trie.get_child('t').get_child('h').get_child('e').get_child('y')
+    # indexes of vertex
+    vertex.end_indexes
 ```
 
 Index of word in dictionary can be used to get relations with additional array with external data(or collection, or can be easily replaced by foreign key in the future). If dictionary contain duplicates, then you will get few indexes in result.
