@@ -70,7 +70,7 @@ Index of word in dictionary can be used to get relations with additional array w
     results of benchmark:
 
     user       system     total       real
-    0.534806   0.090094   0.624900 (  0.643010)
+    1.749733   0.116561   1.866294 (  1.876876)
 
 ## Development
 
