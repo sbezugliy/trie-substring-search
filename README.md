@@ -34,18 +34,40 @@ Or install it yourself as:
 
 ```ruby
     # Array of words in the dictionary
-    dictionary = %w[he she her his him they their]
+    dictionary = %w[he she her his him he they their she]
     # Initialize trie
     trie = ACT::Trie.new(dictionary)
     # Parse text and receive array of all occurrences of words in texts with indexes of word in dictionary
-    trie.parse("he their them height have then their shelter")
+    trie.parse('he their them height have then their shelter')
+    # => [{:word=>"he", :indexes=>[0, 5]},
+    #  {:word=>"their", :indexes=>[7]},
+    #  {:word=>"he", :indexes=>[0, 5]},
+    #  {:word=>"he", :indexes=>[0, 5]},
+    #  {:word=>"he", :indexes=>[0, 5]},
+    #  {:word=>"he", :indexes=>[0, 5]},
+    #  {:word=>"their", :indexes=>[7]},
+    #  {:word=>"he", :indexes=>[0, 5]},
+    #  {:word=>"she", :indexes=>[1, 8]},
+    #  {:word=>"he", :indexes=>[0, 5]}]
     # Get end vertex of word 'they'
     vertex = trie.get_child('t').get_child('h').get_child('e').get_child('y')
     # get array of indexes of word
     vertex.end_indexes
+
+
+
 ```
 
 Index of word in dictionary can be used to get relations with additional array with external data(or collection, or can be easily replaced by foreign key in the future). If dictionary contain duplicates, then you will get few indexes in result.
+
+## Benchmark
+
+    dictionary:                            100000 words
+    number of executions with uniq text:   44555
+    results of benchmark:
+
+    user       system     total       real
+    0.534806   0.090094   0.624900 (  0.643010)
 
 ## Development
 
