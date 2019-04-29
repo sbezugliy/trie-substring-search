@@ -41,7 +41,7 @@ Or install it yourself as:
     trie.parse("he their them height have then their shelter") # WIP!
     # Get end vertex of word 'they'
     vertex = trie.get_child('t').get_child('h').get_child('e').get_child('y')
-    # indexes of vertex
+    # get array of indexes of word
     vertex.end_indexes
 ```
 
