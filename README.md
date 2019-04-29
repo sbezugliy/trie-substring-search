@@ -3,7 +3,7 @@
 [![Build Status](https://cloud.drone.io/api/badges/sbezugliy/aho-corasick-trie-search/status.svg)](https://cloud.drone.io/sbezugliy/aho-corasick-trie-search)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/a491e842aac7b4f62751/maintainability)](https://codeclimate.com/github/sbezugliy/aho-corasick-trie-search/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/a491e842aac7b4f62751/test_coverage)](https://codeclimate.com/github/sbezugliy/aho-corasick-trie-search/test_coverage)
+[![codecov](https://codecov.io/gh/sbezugliy/aho-corasick-trie-search/branch/master/graph/badge.svg)](https://codecov.io/gh/sbezugliy/aho-corasick-trie-search)
 
 ### To be done:
 
