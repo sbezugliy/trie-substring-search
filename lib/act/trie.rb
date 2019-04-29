@@ -52,12 +52,12 @@ module ACT
     end
 
     def build_trie
-      @parent = @root
+      parent = @root
       @dict.each_with_index do |word, index|
         word.each_char.with_index do |char, char_index|
           end_index = char_index == (word.length - 1) ? index : nil
-          @vertex = (char_index.zero? ? @root : @parent)
-          @parent = @vertex.add_child(char, end_index)
+          @vertex = (char_index.zero? ? @root : parent)
+          parent = @vertex.add_child(char, end_index)
         end
       end
       @root
