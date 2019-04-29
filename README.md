@@ -50,9 +50,23 @@ Or install it yourself as:
     #  {:word=>"she", :indexes=>[1, 8]},
     #  {:word=>"he", :indexes=>[0, 5]}]
     # Get end vertex of word 'they'
-    vertex = trie.get_child('t').get_child('h').get_child('e').get_child('y')
+    vertex = trie.trie.get_child('s').get_child('h').get_child('e')
+    # => #<ACT::Vertex:0x000055cabb2399d0
+    #  @char="e",
+    #  @children=[],
+    #  @end_indexes=[1, 8],
+    #  @parent=
+    #   #<ACT::Vertex:0x000055cabb239ac0
+    #    @char="h",
+    #    @children=[#<ACT::Vertex:0x000055cabb2399d0 ...>],
+    #    @end_indexes=[],
+    #    @parent=
+    #     #<ACT::Vertex:0x000055cabb239bb0
+    #      @char="s",
+    #      @children=[#<ACT::Vertex:0x000055cabb239ac0 ...>],
     # get array of indexes of word
     vertex.end_indexes
+    # => [1, 8]
 
 
 

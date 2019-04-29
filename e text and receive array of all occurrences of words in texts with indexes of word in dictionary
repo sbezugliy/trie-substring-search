@@ -1,0 +1,330 @@
+=> [32m#<ACT::Trie:0x00005595617f56d8[0m
+ @dict[32m=[0m[[31m[1;31m"[0m[31mhe[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mshe[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mher[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mhis[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mhim[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mhe[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mthey[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mtheir[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mshe[1;31m"[0m[31m[0m],
+ @root[32m=[0m
+  [32m#<ACT::Vertex:0x00005595617f5638[0m
+   @char[32m=[0m[1;36mnil[0m,
+   @children[32m=[0m
+    [[32m#<ACT::Vertex:0x00005595617f4f08[0m
+      @char[32m=[0m[31m[1;31m"[0m[31mh[1;31m"[0m[31m[0m,
+      @children[32m=[0m
+       [[32m#<ACT::Vertex:0x00005595617f4d00[0m
+         @char[32m=[0m[31m[1;31m"[0m[31me[1;31m"[0m[31m[0m,
+         @children[32m=[0m[[32m#<ACT::Vertex:0x00005595617f4288[0m @char[32m=[0m[31m[1;31m"[0m[31mr[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m2[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f4d00[0m ...[32m>[0m[32m>[0m],
+         @end_indexes[32m=[0m[[1;34m0[0m, [1;34m5[0m],
+         @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f4f08[0m ...[32m>[0m[32m>[0m,
+        [32m#<ACT::Vertex:0x00005595617fbd08[0m
+         @char[32m=[0m[31m[1;31m"[0m[31mi[1;31m"[0m[31m[0m,
+         @children[32m=[0m
+          [[32m#<ACT::Vertex:0x00005595617fba38[0m @char[32m=[0m[31m[1;31m"[0m[31ms[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m3[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617fbd08[0m ...[32m>[0m[32m>[0m,
+           [32m#<ACT::Vertex:0x00005595617f8e78[0m @char[32m=[0m[31m[1;31m"[0m[31mm[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m4[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617fbd08[0m ...[32m>[0m[32m>[0m],
+         @end_indexes[32m=[0m[],
+         @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f4f08[0m ...[32m>[0m[32m>[0m],
+      @end_indexes[32m=[0m[],
+      @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f5638[0m ...[32m>[0m[32m>[0m,
+     [32m#<ACT::Vertex:0x00005595617f4940[0m
+      @char[32m=[0m[31m[1;31m"[0m[31ms[1;31m"[0m[31m[0m,
+      @children[32m=[0m
+       [[32m#<ACT::Vertex:0x00005595617f47b0[0m
+         @char[32m=[0m[31m[1;31m"[0m[31mh[1;31m"[0m[31m[0m,
+         @children[32m=[0m[[32m#<ACT::Vertex:0x00005595617f4670[0m @char[32m=[0m[31m[1;31m"[0m[31me[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m1[0m, [1;34m8[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f47b0[0m ...[32m>[0m[32m>[0m],
+         @end_indexes[32m=[0m[],
+         @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f4940[0m ...[32m>[0m[32m>[0m],
+      @end_indexes[32m=[0m[],
+      @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f5638[0m ...[32m>[0m[32m>[0m,
+     [32m#<ACT::Vertex:0x00005595617f83d8[0m
+      @char[32m=[0m[31m[1;31m"[0m[31mt[1;31m"[0m[31m[0m,
+      @children[32m=[0m
+       [[32m#<ACT::Vertex:0x00005595617f8040[0m
+         @char[32m=[0m[31m[1;31m"[0m[31mh[1;31m"[0m[31m[0m,
+         @children[32m=[0m
+          [[32m#<ACT::Vertex:0x0000559561807d88[0m
+            @char[32m=[0m[31m[1;31m"[0m[31me[1;31m"[0m[31m[0m,
+            @children[32m=[0m
+             [[32m#<ACT::Vertex:0x0000559561807ba8[0m @char[32m=[0m[31m[1;31m"[0m[31my[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m6[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x0000559561807d88[0m ...[32m>[0m[32m>[0m,
+              [32m#<ACT::Vertex:0x0000559561807400[0m
+               @char[32m=[0m[31m[1;31m"[0m[31mi[1;31m"[0m[31m[0m,
+               @children[32m=[0m[[32m#<ACT::Vertex:0x00005595618072e8[0m @char[32m=[0m[31m[1;31m"[0m[31mr[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m7[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x0000559561807400[0m ...[32m>[0m[32m>[0m],
+               @end_indexes[32m=[0m[],
+               @parent[32m=[0m[32m#<ACT::Vertex:0x0000559561807d88[0m ...[32m>[0m[32m>[0m],
+            @end_indexes[32m=[0m[],
+            @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f8040[0m ...[32m>[0m[32m>[0m],
+         @end_indexes[32m=[0m[],
+         @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f83d8[0m ...[32m>[0m[32m>[0m],
+      @end_indexes[32m=[0m[],
+      @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f5638[0m ...[32m>[0m[32m>[0m],
+   @end_indexes[32m=[0m[],
+   @parent[32m=[0m[1;36mnil[0m[32m>[0m,
+ @trie[32m=[0m
+  [32m#<ACT::Vertex:0x00005595617f5638[0m
+   @char[32m=[0m[1;36mnil[0m,
+   @children[32m=[0m
+    [[32m#<ACT::Vertex:0x00005595617f4f08[0m
+      @char[32m=[0m[31m[1;31m"[0m[31mh[1;31m"[0m[31m[0m,
+      @children[32m=[0m
+       [[32m#<ACT::Vertex:0x00005595617f4d00[0m
+         @char[32m=[0m[31m[1;31m"[0m[31me[1;31m"[0m[31m[0m,
+         @children[32m=[0m[[32m#<ACT::Vertex:0x00005595617f4288[0m @char[32m=[0m[31m[1;31m"[0m[31mr[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m2[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f4d00[0m ...[32m>[0m[32m>[0m],
+         @end_indexes[32m=[0m[[1;34m0[0m, [1;34m5[0m],
+         @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f4f08[0m ...[32m>[0m[32m>[0m,
+        [32m#<ACT::Vertex:0x00005595617fbd08[0m
+         @char[32m=[0m[31m[1;31m"[0m[31mi[1;31m"[0m[31m[0m,
+         @children[32m=[0m
+          [[32m#<ACT::Vertex:0x00005595617fba38[0m @char[32m=[0m[31m[1;31m"[0m[31ms[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m3[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617fbd08[0m ...[32m>[0m[32m>[0m,
+           [32m#<ACT::Vertex:0x00005595617f8e78[0m @char[32m=[0m[31m[1;31m"[0m[31mm[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m4[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617fbd08[0m ...[32m>[0m[32m>[0m],
+         @end_indexes[32m=[0m[],
+         @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f4f08[0m ...[32m>[0m[32m>[0m],
+      @end_indexes[32m=[0m[],
+      @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f5638[0m ...[32m>[0m[32m>[0m,
+     [32m#<ACT::Vertex:0x00005595617f4940[0m
+      @char[32m=[0m[31m[1;31m"[0m[31ms[1;31m"[0m[31m[0m,
+      @children[32m=[0m
+       [[32m#<ACT::Vertex:0x00005595617f47b0[0m
+         @char[32m=[0m[31m[1;31m"[0m[31mh[1;31m"[0m[31m[0m,
+         @children[32m=[0m[[32m#<ACT::Vertex:0x00005595617f4670[0m @char[32m=[0m[31m[1;31m"[0m[31me[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m1[0m, [1;34m8[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f47b0[0m ...[32m>[0m[32m>[0m],
+         @end_indexes[32m=[0m[],
+         @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f4940[0m ...[32m>[0m[32m>[0m],
+      @end_indexes[32m=[0m[],
+      @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f5638[0m ...[32m>[0m[32m>[0m,
+     [32m#<ACT::Vertex:0x00005595617f83d8[0m
+      @char[32m=[0m[31m[1;31m"[0m[31mt[1;31m"[0m[31m[0m,
+      @children[32m=[0m
+       [[32m#<ACT::Vertex:0x00005595617f8040[0m
+         @char[32m=[0m[31m[1;31m"[0m[31mh[1;31m"[0m[31m[0m,
+         @children[32m=[0m
+          [[32m#<ACT::Vertex:0x0000559561807d88[0m
+            @char[32m=[0m[31m[1;31m"[0m[31me[1;31m"[0m[31m[0m,
+            @children[32m=[0m
+             [[32m#<ACT::Vertex:0x0000559561807ba8[0m @char[32m=[0m[31m[1;31m"[0m[31my[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m6[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x0000559561807d88[0m ...[32m>[0m[32m>[0m,
+              [32m#<ACT::Vertex:0x0000559561807400[0m
+               @char[32m=[0m[31m[1;31m"[0m[31mi[1;31m"[0m[31m[0m,
+               @children[32m=[0m[[32m#<ACT::Vertex:0x00005595618072e8[0m @char[32m=[0m[31m[1;31m"[0m[31mr[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m7[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x0000559561807400[0m ...[32m>[0m[32m>[0m],
+               @end_indexes[32m=[0m[],
+               @parent[32m=[0m[32m#<ACT::Vertex:0x0000559561807d88[0m ...[32m>[0m[32m>[0m],
+            @end_indexes[32m=[0m[],
+            @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f8040[0m ...[32m>[0m[32m>[0m],
+         @end_indexes[32m=[0m[],
+         @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f83d8[0m ...[32m>[0m[32m>[0m],
+      @end_indexes[32m=[0m[],
+      @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f5638[0m ...[32m>[0m[32m>[0m],
+   @end_indexes[32m=[0m[],
+   @parent[32m=[0m[1;36mnil[0m[32m>[0m,
+ @vertex[32m=[0m
+  [32m#<ACT::Vertex:0x00005595617f47b0[0m
+   @char[32m=[0m[31m[1;31m"[0m[31mh[1;31m"[0m[31m[0m,
+   @children[32m=[0m[[32m#<ACT::Vertex:0x00005595617f4670[0m @char[32m=[0m[31m[1;31m"[0m[31me[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m1[0m, [1;34m8[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f47b0[0m ...[32m>[0m[32m>[0m],
+   @end_indexes[32m=[0m[],
+   @parent[32m=[0m
+    [32m#<ACT::Vertex:0x00005595617f4940[0m
+     @char[32m=[0m[31m[1;31m"[0m[31ms[1;31m"[0m[31m[0m,
+     @children[32m=[0m[[32m#<ACT::Vertex:0x00005595617f47b0[0m ...[32m>[0m],
+     @end_indexes[32m=[0m[],
+     @parent[32m=[0m
+      [32m#<ACT::Vertex:0x00005595617f5638[0m
+       @char[32m=[0m[1;36mnil[0m,
+       @children[32m=[0m
+        [[32m#<ACT::Vertex:0x00005595617f4f08[0m
+          @char[32m=[0m[31m[1;31m"[0m[31mh[1;31m"[0m[31m[0m,
+          @children[32m=[0m
+           [[32m#<ACT::Vertex:0x00005595617f4d00[0m
+             @char[32m=[0m[31m[1;31m"[0m[31me[1;31m"[0m[31m[0m,
+             @children[32m=[0m[[32m#<ACT::Vertex:0x00005595617f4288[0m @char[32m=[0m[31m[1;31m"[0m[31mr[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m2[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f4d00[0m ...[32m>[0m[32m>[0m],
+             @end_indexes[32m=[0m[[1;34m0[0m, [1;34m5[0m],
+             @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f4f08[0m ...[32m>[0m[32m>[0m,
+            [32m#<ACT::Vertex:0x00005595617fbd08[0m
+             @char[32m=[0m[31m[1;31m"[0m[31mi[1;31m"[0m[31m[0m,
+             @children[32m=[0m
+              [[32m#<ACT::Vertex:0x00005595617fba38[0m @char[32m=[0m[31m[1;31m"[0m[31ms[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m3[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617fbd08[0m ...[32m>[0m[32m>[0m,
+               [32m#<ACT::Vertex:0x00005595617f8e78[0m @char[32m=[0m[31m[1;31m"[0m[31mm[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m4[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617fbd08[0m ...[32m>[0m[32m>[0m],
+             @end_indexes[32m=[0m[],
+             @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f4f08[0m ...[32m>[0m[32m>[0m],
+          @end_indexes[32m=[0m[],
+          @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f5638[0m ...[32m>[0m[32m>[0m,
+         [32m#<ACT::Vertex:0x00005595617f4940[0m ...[32m>[0m,
+         [32m#<ACT::Vertex:0x00005595617f83d8[0m
+          @char[32m=[0m[31m[1;31m"[0m[31mt[1;31m"[0m[31m[0m,
+          @children[32m=[0m
+           [[32m#<ACT::Vertex:0x00005595617f8040[0m
+             @char[32m=[0m[31m[1;31m"[0m[31mh[1;31m"[0m[31m[0m,
+             @children[32m=[0m
+              [[32m#<ACT::Vertex:0x0000559561807d88[0m
+                @char[32m=[0m[31m[1;31m"[0m[31me[1;31m"[0m[31m[0m,
+                @children[32m=[0m
+                 [[32m#<ACT::Vertex:0x0000559561807ba8[0m @char[32m=[0m[31m[1;31m"[0m[31my[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m6[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x0000559561807d88[0m ...[32m>[0m[32m>[0m,
+                  [32m#<ACT::Vertex:0x0000559561807400[0m
+                   @char[32m=[0m[31m[1;31m"[0m[31mi[1;31m"[0m[31m[0m,
+                   @children[32m=[0m[[32m#<ACT::Vertex:0x00005595618072e8[0m @char[32m=[0m[31m[1;31m"[0m[31mr[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m7[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x0000559561807400[0m ...[32m>[0m[32m>[0m],
+                   @end_indexes[32m=[0m[],
+                   @parent[32m=[0m[32m#<ACT::Vertex:0x0000559561807d88[0m ...[32m>[0m[32m>[0m],
+                @end_indexes[32m=[0m[],
+                @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f8040[0m ...[32m>[0m[32m>[0m],
+             @end_indexes[32m=[0m[],
+             @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f83d8[0m ...[32m>[0m[32m>[0m],
+          @end_indexes[32m=[0m[],
+          @parent[32m=[0m[32m#<ACT::Vertex:0x00005595617f5638[0m ...[32m>[0m[32m>[0m],
+       @end_indexes[32m=[0m[],
+       @parent[32m=[0m[1;36mnil[0m[32m>[0m[32m>[0m[32m>[0m[32m>[0m
+=> [32m#<ACT::Trie:0x000055b2739c4cc8[0m
+ @dict[32m=[0m[[31m[1;31m"[0m[31mhe[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mshe[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mher[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mhis[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mhim[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mhe[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mthey[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mtheir[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mshe[1;31m"[0m[31m[0m],
+ @root[32m=[0m
+  [32m#<ACT::Vertex:0x000055b2739c4c78[0m
+   @char[32m=[0m[1;36mnil[0m,
+   @children[32m=[0m
+    [[32m#<ACT::Vertex:0x000055b2739c4980[0m
+      @char[32m=[0m[31m[1;31m"[0m[31mh[1;31m"[0m[31m[0m,
+      @children[32m=[0m
+       [[32m#<ACT::Vertex:0x000055b2739c4818[0m
+         @char[32m=[0m[31m[1;31m"[0m[31me[1;31m"[0m[31m[0m,
+         @children[32m=[0m[[32m#<ACT::Vertex:0x000055b2739cfc90[0m @char[32m=[0m[31m[1;31m"[0m[31mr[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m2[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739c4818[0m ...[32m>[0m[32m>[0m],
+         @end_indexes[32m=[0m[[1;34m0[0m, [1;34m5[0m],
+         @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739c4980[0m ...[32m>[0m[32m>[0m,
+        [32m#<ACT::Vertex:0x000055b2739cf948[0m
+         @char[32m=[0m[31m[1;31m"[0m[31mi[1;31m"[0m[31m[0m,
+         @children[32m=[0m
+          [[32m#<ACT::Vertex:0x000055b2739cf7e0[0m @char[32m=[0m[31m[1;31m"[0m[31ms[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m3[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739cf948[0m ...[32m>[0m[32m>[0m,
+           [32m#<ACT::Vertex:0x000055b2739cf2e0[0m @char[32m=[0m[31m[1;31m"[0m[31mm[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m4[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739cf948[0m ...[32m>[0m[32m>[0m],
+         @end_indexes[32m=[0m[],
+         @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739c4980[0m ...[32m>[0m[32m>[0m],
+      @end_indexes[32m=[0m[],
+      @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739c4c78[0m ...[32m>[0m[32m>[0m,
+     [32m#<ACT::Vertex:0x000055b2739c4548[0m
+      @char[32m=[0m[31m[1;31m"[0m[31ms[1;31m"[0m[31m[0m,
+      @children[32m=[0m
+       [[32m#<ACT::Vertex:0x000055b2739c43b8[0m
+         @char[32m=[0m[31m[1;31m"[0m[31mh[1;31m"[0m[31m[0m,
+         @children[32m=[0m[[32m#<ACT::Vertex:0x000055b2739c4228[0m @char[32m=[0m[31m[1;31m"[0m[31me[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m1[0m, [1;34m8[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739c43b8[0m ...[32m>[0m[32m>[0m],
+         @end_indexes[32m=[0m[],
+         @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739c4548[0m ...[32m>[0m[32m>[0m],
+      @end_indexes[32m=[0m[],
+      @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739c4c78[0m ...[32m>[0m[32m>[0m,
+     [32m#<ACT::Vertex:0x000055b2739ceb88[0m
+      @char[32m=[0m[31m[1;31m"[0m[31mt[1;31m"[0m[31m[0m,
+      @children[32m=[0m
+       [[32m#<ACT::Vertex:0x000055b2739ce8b8[0m
+         @char[32m=[0m[31m[1;31m"[0m[31mh[1;31m"[0m[31m[0m,
+         @children[32m=[0m
+          [[32m#<ACT::Vertex:0x000055b2739ce778[0m
+            @char[32m=[0m[31m[1;31m"[0m[31me[1;31m"[0m[31m[0m,
+            @children[32m=[0m
+             [[32m#<ACT::Vertex:0x000055b2739ce610[0m @char[32m=[0m[31m[1;31m"[0m[31my[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m6[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739ce778[0m ...[32m>[0m[32m>[0m,
+              [32m#<ACT::Vertex:0x000055b2739cdff8[0m
+               @char[32m=[0m[31m[1;31m"[0m[31mi[1;31m"[0m[31m[0m,
+               @children[32m=[0m[[32m#<ACT::Vertex:0x000055b2739cde40[0m @char[32m=[0m[31m[1;31m"[0m[31mr[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m7[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739cdff8[0m ...[32m>[0m[32m>[0m],
+               @end_indexes[32m=[0m[],
+               @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739ce778[0m ...[32m>[0m[32m>[0m],
+            @end_indexes[32m=[0m[],
+            @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739ce8b8[0m ...[32m>[0m[32m>[0m],
+         @end_indexes[32m=[0m[],
+         @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739ceb88[0m ...[32m>[0m[32m>[0m],
+      @end_indexes[32m=[0m[],
+      @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739c4c78[0m ...[32m>[0m[32m>[0m],
+   @end_indexes[32m=[0m[],
+   @parent[32m=[0m[1;36mnil[0m[32m>[0m,
+ @trie[32m=[0m
+  [32m#<ACT::Vertex:0x000055b2739c4c78[0m
+   @char[32m=[0m[1;36mnil[0m,
+   @children[32m=[0m
+    [[32m#<ACT::Vertex:0x000055b2739c4980[0m
+      @char[32m=[0m[31m[1;31m"[0m[31mh[1;31m"[0m[31m[0m,
+      @children[32m=[0m
+       [[32m#<ACT::Vertex:0x000055b2739c4818[0m
+         @char[32m=[0m[31m[1;31m"[0m[31me[1;31m"[0m[31m[0m,
+         @children[32m=[0m[[32m#<ACT::Vertex:0x000055b2739cfc90[0m @char[32m=[0m[31m[1;31m"[0m[31mr[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m2[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739c4818[0m ...[32m>[0m[32m>[0m],
+         @end_indexes[32m=[0m[[1;34m0[0m, [1;34m5[0m],
+         @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739c4980[0m ...[32m>[0m[32m>[0m,
+        [32m#<ACT::Vertex:0x000055b2739cf948[0m
+         @char[32m=[0m[31m[1;31m"[0m[31mi[1;31m"[0m[31m[0m,
+         @children[32m=[0m
+          [[32m#<ACT::Vertex:0x000055b2739cf7e0[0m @char[32m=[0m[31m[1;31m"[0m[31ms[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m3[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739cf948[0m ...[32m>[0m[32m>[0m,
+           [32m#<ACT::Vertex:0x000055b2739cf2e0[0m @char[32m=[0m[31m[1;31m"[0m[31mm[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m4[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739cf948[0m ...[32m>[0m[32m>[0m],
+         @end_indexes[32m=[0m[],
+         @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739c4980[0m ...[32m>[0m[32m>[0m],
+      @end_indexes[32m=[0m[],
+      @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739c4c78[0m ...[32m>[0m[32m>[0m,
+     [32m#<ACT::Vertex:0x000055b2739c4548[0m
+      @char[32m=[0m[31m[1;31m"[0m[31ms[1;31m"[0m[31m[0m,
+      @children[32m=[0m
+       [[32m#<ACT::Vertex:0x000055b2739c43b8[0m
+         @char[32m=[0m[31m[1;31m"[0m[31mh[1;31m"[0m[31m[0m,
+         @children[32m=[0m[[32m#<ACT::Vertex:0x000055b2739c4228[0m @char[32m=[0m[31m[1;31m"[0m[31me[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m1[0m, [1;34m8[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739c43b8[0m ...[32m>[0m[32m>[0m],
+         @end_indexes[32m=[0m[],
+         @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739c4548[0m ...[32m>[0m[32m>[0m],
+      @end_indexes[32m=[0m[],
+      @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739c4c78[0m ...[32m>[0m[32m>[0m,
+     [32m#<ACT::Vertex:0x000055b2739ceb88[0m
+      @char[32m=[0m[31m[1;31m"[0m[31mt[1;31m"[0m[31m[0m,
+      @children[32m=[0m
+       [[32m#<ACT::Vertex:0x000055b2739ce8b8[0m
+         @char[32m=[0m[31m[1;31m"[0m[31mh[1;31m"[0m[31m[0m,
+         @children[32m=[0m
+          [[32m#<ACT::Vertex:0x000055b2739ce778[0m
+            @char[32m=[0m[31m[1;31m"[0m[31me[1;31m"[0m[31m[0m,
+            @children[32m=[0m
+             [[32m#<ACT::Vertex:0x000055b2739ce610[0m @char[32m=[0m[31m[1;31m"[0m[31my[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m6[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739ce778[0m ...[32m>[0m[32m>[0m,
+              [32m#<ACT::Vertex:0x000055b2739cdff8[0m
+               @char[32m=[0m[31m[1;31m"[0m[31mi[1;31m"[0m[31m[0m,
+               @children[32m=[0m[[32m#<ACT::Vertex:0x000055b2739cde40[0m @char[32m=[0m[31m[1;31m"[0m[31mr[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m7[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739cdff8[0m ...[32m>[0m[32m>[0m],
+               @end_indexes[32m=[0m[],
+               @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739ce778[0m ...[32m>[0m[32m>[0m],
+            @end_indexes[32m=[0m[],
+            @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739ce8b8[0m ...[32m>[0m[32m>[0m],
+         @end_indexes[32m=[0m[],
+         @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739ceb88[0m ...[32m>[0m[32m>[0m],
+      @end_indexes[32m=[0m[],
+      @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739c4c78[0m ...[32m>[0m[32m>[0m],
+   @end_indexes[32m=[0m[],
+   @parent[32m=[0m[1;36mnil[0m[32m>[0m,
+ @vertex[32m=[0m
+  [32m#<ACT::Vertex:0x000055b2739c43b8[0m
+   @char[32m=[0m[31m[1;31m"[0m[31mh[1;31m"[0m[31m[0m,
+   @children[32m=[0m[[32m#<ACT::Vertex:0x000055b2739c4228[0m @char[32m=[0m[31m[1;31m"[0m[31me[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m1[0m, [1;34m8[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739c43b8[0m ...[32m>[0m[32m>[0m],
+   @end_indexes[32m=[0m[],
+   @parent[32m=[0m
+    [32m#<ACT::Vertex:0x000055b2739c4548[0m
+     @char[32m=[0m[31m[1;31m"[0m[31ms[1;31m"[0m[31m[0m,
+     @children[32m=[0m[[32m#<ACT::Vertex:0x000055b2739c43b8[0m ...[32m>[0m],
+     @end_indexes[32m=[0m[],
+     @parent[32m=[0m
+      [32m#<ACT::Vertex:0x000055b2739c4c78[0m
+       @char[32m=[0m[1;36mnil[0m,
+       @children[32m=[0m
+        [[32m#<ACT::Vertex:0x000055b2739c4980[0m
+          @char[32m=[0m[31m[1;31m"[0m[31mh[1;31m"[0m[31m[0m,
+          @children[32m=[0m
+           [[32m#<ACT::Vertex:0x000055b2739c4818[0m
+             @char[32m=[0m[31m[1;31m"[0m[31me[1;31m"[0m[31m[0m,
+             @children[32m=[0m[[32m#<ACT::Vertex:0x000055b2739cfc90[0m @char[32m=[0m[31m[1;31m"[0m[31mr[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m2[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739c4818[0m ...[32m>[0m[32m>[0m],
+             @end_indexes[32m=[0m[[1;34m0[0m, [1;34m5[0m],
+             @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739c4980[0m ...[32m>[0m[32m>[0m,
+            [32m#<ACT::Vertex:0x000055b2739cf948[0m
+             @char[32m=[0m[31m[1;31m"[0m[31mi[1;31m"[0m[31m[0m,
+             @children[32m=[0m
+              [[32m#<ACT::Vertex:0x000055b2739cf7e0[0m @char[32m=[0m[31m[1;31m"[0m[31ms[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m3[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739cf948[0m ...[32m>[0m[32m>[0m,
+               [32m#<ACT::Vertex:0x000055b2739cf2e0[0m @char[32m=[0m[31m[1;31m"[0m[31mm[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m4[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739cf948[0m ...[32m>[0m[32m>[0m],
+             @end_indexes[32m=[0m[],
+             @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739c4980[0m ...[32m>[0m[32m>[0m],
+          @end_indexes[32m=[0m[],
+          @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739c4c78[0m ...[32m>[0m[32m>[0m,
+         [32m#<ACT::Vertex:0x000055b2739c4548[0m ...[32m>[0m,
+         [32m#<ACT::Vertex:0x000055b2739ceb88[0m
+          @char[32m=[0m[31m[1;31m"[0m[31mt[1;31m"[0m[31m[0m,
+          @children[32m=[0m
+           [[32m#<ACT::Vertex:0x000055b2739ce8b8[0m
+             @char[32m=[0m[31m[1;31m"[0m[31mh[1;31m"[0m[31m[0m,
+             @children[32m=[0m
+              [[32m#<ACT::Vertex:0x000055b2739ce778[0m
+                @char[32m=[0m[31m[1;31m"[0m[31me[1;31m"[0m[31m[0m,
+                @children[32m=[0m
+                 [[32m#<ACT::Vertex:0x000055b2739ce610[0m @char[32m=[0m[31m[1;31m"[0m[31my[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m6[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739ce778[0m ...[32m>[0m[32m>[0m,
+                  [32m#<ACT::Vertex:0x000055b2739cdff8[0m
+                   @char[32m=[0m[31m[1;31m"[0m[31mi[1;31m"[0m[31m[0m,
+                   @children[32m=[0m[[32m#<ACT::Vertex:0x000055b2739cde40[0m @char[32m=[0m[31m[1;31m"[0m[31mr[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m7[0m], @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739cdff8[0m ...[32m>[0m[32m>[0m],
+                   @end_indexes[32m=[0m[],
+                   @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739ce778[0m ...[32m>[0m[32m>[0m],
+                @end_indexes[32m=[0m[],
+                @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739ce8b8[0m ...[32m>[0m[32m>[0m],
+             @end_indexes[32m=[0m[],
+             @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739ceb88[0m ...[32m>[0m[32m>[0m],
+          @end_indexes[32m=[0m[],
+          @parent[32m=[0m[32m#<ACT::Vertex:0x000055b2739c4c78[0m ...[32m>[0m[32m>[0m],
+       @end_indexes[32m=[0m[],
+       @parent[32m=[0m[1;36mnil[0m[32m>[0m[32m>[0m[32m>[0m[32m>[0m
