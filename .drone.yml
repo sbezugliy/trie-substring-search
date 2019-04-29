@@ -12,6 +12,10 @@ steps:
 
   - name: test
     image: ruby
+    environment:
+      CODECOV:
+        from_secret: CODECOV_TOKEN
+      CI: true
     volumes:
       - name: bundle
         path: /usr/local/bundle
