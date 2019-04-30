@@ -61,6 +61,13 @@ RSpec.describe ACT::Trie do
       expect(act.send(:vertex_map, text) { :char }).to eq(char_map)
     end
 
+    it 'returns array of start vertices mapping' do
+      act.send(:vertex_map, text) { :itself }.each.with_index do |m, i|
+        expect(m[:key]).to be_an_instance_of(ACT::Vertex)
+        expect(m[:indexes]).to eq(char_map[i][:indexes])
+      end
+    end
+
     xit 'should parse text using char map' do
     end
 
