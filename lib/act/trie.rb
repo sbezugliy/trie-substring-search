@@ -29,6 +29,7 @@ module ACT
 
     def search_text(text)
       result = []
+      p @trie.children_chars
       text.dup.each do |char|
         text = text[1..-1] if text
         result << search_next(char, text)
@@ -61,6 +62,12 @@ module ACT
         vertex = current_vertex
       end
       result
+    end
+
+    def map_char_indexes(text, chars)
+      chars.map do |char|
+        text.each_char.collect.with_index { |c, i| i if c == char }.compact
+      end
     end
 
     def end_vertex?(vertex)

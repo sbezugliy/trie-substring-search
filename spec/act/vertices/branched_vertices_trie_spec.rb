@@ -36,5 +36,9 @@ RSpec.describe ACT::Vertex do
       expect(b_vert.end_indexes).to include(5)
       expect(e_vert.end_indexes).to include(7)
     end
+
+    it 'returns children chars' do
+      expect(c_vert.children_chars).to eq(%w[b e])
+    end
   end
 end

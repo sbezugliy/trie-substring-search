@@ -26,6 +26,10 @@ module ACT
       @children.find { |c| c.char == char }
     end
 
+    def children_chars
+      @children.map(&:char)
+    end
+
     private
 
     def init_subchild(char, end_index)
