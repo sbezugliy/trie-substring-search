@@ -29,7 +29,6 @@ module ACT
 
     def search_text(text)
       result = []
-      p @trie.vertex_map(text, &:char)
       text.dup.each do |char|
         text = text[1..-1] if text
         result << search_next(char, text)
