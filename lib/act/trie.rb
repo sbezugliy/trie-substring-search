@@ -64,9 +64,12 @@ module ACT
       result
     end
 
-    def map_char_indexes(text, chars)
-      chars.map do |char|
-        text.each_char.collect.with_index { |c, i| i if c == char }.compact
+    def char_map(text)
+      @trie.children.map do |vertex|
+        {
+          char: vertex.char,
+          indexes: text.each_char.collect.with_index { |c, i| i if c == vertex.char }.compact
+        }
       end
     end
 
