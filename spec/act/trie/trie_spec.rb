@@ -11,7 +11,7 @@ RSpec.describe ACT::Trie do
     let!(:cbe_vert_indexes) { [2] }
     let!(:dfe_vert_indexes) { [5, 9] }
     let!(:df_vert_indexes) { [7] }
-    let!(:char_map) { [{ char: 'a', indexes: [3, 7] }, { char: 'c', indexes: [] }, { char: 'd', indexes: [2, 14] }, { char: 'x', indexes: [10] }] }
+    let!(:char_map) { [{ key: 'a', indexes: [3, 7] }, { key: 'c', indexes: [] }, { key: 'd', indexes: [2, 14] }, { key: 'x', indexes: [10] }] }
 
     it 'should be instance of ACT::Trie with trie of ACT::Vertex' do
       expect(act).to be_an_instance_of(ACT::Trie)
@@ -58,7 +58,7 @@ RSpec.describe ACT::Trie do
     end
 
     it 'returns array of start char mapping' do
-      expect(act.send(:char_map, text)).to eq(char_map)
+      expect(act.send(:vertex_map, text) { :char }).to eq(char_map)
     end
 
     xit 'should parse text using char map' do

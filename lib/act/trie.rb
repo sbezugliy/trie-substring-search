@@ -29,7 +29,7 @@ module ACT
 
     def search_text(text)
       result = []
-      p @trie.children_chars
+      p @trie.vertex_map(text, &:char)
       text.dup.each do |char|
         text = text[1..-1] if text
         result << search_next(char, text)
@@ -64,10 +64,10 @@ module ACT
       result
     end
 
-    def char_map(text)
+    def vertex_map(text)
       @trie.children.map do |vertex|
         {
-          char: vertex.char,
+          key: vertex.send(yield),
           indexes: text.each_char.collect.with_index { |c, i| i if c == vertex.char }.compact
         }
       end
