@@ -40,6 +40,8 @@ Or install it yourself as:
     #  {:word=>"he", :indexes=>[0, 5]},
     #  {:word=>"she", :indexes=>[1, 8]},
     #  {:word=>"he", :indexes=>[0, 5]}]
+    # Add additional words to the dictionary
+    act.extend_dictionary(["our", "it", "them"])
     # Get end vertex of word 'they'
     vertex = act.trie.get_child('s').get_child('h').get_child('e')
     # => #<ACT::Vertex:0x000055cabb2399d0

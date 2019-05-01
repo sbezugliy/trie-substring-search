@@ -2,30 +2,62 @@
 module ACT
   require 'act/vertex'
 
+  ##
   # Main class for creating Aho-Corasick Trie from array of words of dictionary
   class Trie
-    attr_reader :root, :dict, :trie
-    attr_accessor :text
+    ##
+    # Root vertex
+    attr_reader :root
+    ##
+    # Dictionary attribute
+    attr_reader :dictionary
+    ##
+    # Trie attribute
+    attr_reader :trie
+    
+    ##
+    # Initialize new trie and fill it with words from dictionary
+    #
+    # Remarks:
+    # * dictioanry is array of characters
+    # * if indexing is important array should not be sorted
+    # * word from sentence may contain spaces and special characters, so
+    #   one "word" can be the whole sentence
+    # * word can be an integer, but result will be converted to the string
     def initialize(dictionary)
       @root = ACT::Vertex.new
       @dictionary = dictionary
       @trie = build_trie
     end
 
+    ##
+    # Executes text analyze and returns map occurring words with indexes from dictionary
     def parse(text)
-      text = text.split('')
+      text = text.to_s.split('')
       vm = vertex_map(text) { :vertex }
       exec_branches(text, vm).flatten.compact
     end
 
+    ##
+    # Returns hash with word and indexes at dictionary
+    # * Ending vertex of chain should be used as argument, it means that it should 
+    #   contain at least one value in the array of end_indexes attribute
     def backtrace_to_word(vertex)
-      chain = backtrace(vertex)
-      {
-        word: chain.reduce('') { |acc, v| acc << v.char },
-        indexes: chain.last.end_indexes
-      }
+      if vertex.end_indexes.empty?
+        raise 'Argument should be ending vertex of chain, and contain at'\
+              'least one value in the array of end_indexes attribute'
+      else
+        chain = backtrace(vertex)
+        {
+          word: chain.reduce('') { |acc, v| acc << v.char },
+          indexes: chain.last.end_indexes
+        }
+      end
     end
 
+    ##
+    # Adds additional words(chains of vertexes) to the trie object
+    # * Argument should be array of words
     def extend_dictionay(dict)
       build_trie(dict)
     end
@@ -90,7 +122,8 @@ module ACT
     def build_trie(dict = @dictionary)
       parent = @root
       dict.each_with_index do |word, index|
-        word.each_char.with_index do |char, char_index|
+        word = word.to_s
+        word.to_s.each_char.with_index do |char, char_index|
           end_index = char_index == (word.length - 1) ? index : nil
           @vertex = (char_index.zero? ? @root : parent)
           parent = @vertex.add_child(char, end_index)
