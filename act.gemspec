@@ -9,21 +9,20 @@ Gem::Specification.new do |spec|
   spec.version       = ACT::VERSION
   spec.authors       = ['Sergey Bezugliy']
   spec.email         = ['s.bezugliy@gmail.com']
-
-  spec.summary       = "'Ruby library realising Aho-Corasick substring'
-  'search algorithm'"
-  spec.description   = " 'This gem provides ruby library with realisation'
-   of Aho-Corasick substring search algorithm, with linear complication.'"
   spec.homepage      = 'https://codenv.top/projects/aho-corasick-trie'
-
+  spec.summary       = 'Aho-Corasick substring search algorithm implementation'
+  spec.description   = <<-DESCRIPTION
+  This gem provides ruby library with Aho-Corasick
+  substring search algorithm implementation.
+  DESCRIPTION
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = 'https://github.com'
+    spec.metadata['allowed_push_host']  = 'https://github.com'
 
-    spec.metadata['homepage_uri'] = spec.homepage
-    spec.metadata['source_code_uri'] = 'https://github.com/sbezugliy/aho-corasick-trie-search'
-    spec.metadata['changelog_uri'] = 'https://github.com/sbezugliy/aho-corasick-trie-search/changelog.md'
+    spec.metadata['homepage_uri']       = spec.homepage
+    spec.metadata['source_code_uri']    = 'https://github.com/sbezugliy/aho-corasick-trie-search'
+    spec.metadata['changelog_uri']      = 'https://github.com/sbezugliy/aho-corasick-trie-search/changelog.md'
   else
     raise 'RubyGems 2.0 or newer is required to protect against' \
       'public gem pushes.'

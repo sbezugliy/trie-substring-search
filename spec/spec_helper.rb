@@ -29,4 +29,3 @@ else
   SimpleCov.formatter = SimpleCov::Formatter::Console
 end
 SimpleCov.start
-
