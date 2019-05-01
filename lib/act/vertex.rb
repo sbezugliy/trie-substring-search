@@ -1,10 +1,25 @@
 # ACT module
 module ACT
+  ##
   # Trie vertex class
   class Vertex
-    attr_reader :parent, :children
-    attr_accessor :end_indexes, :char
+    ##
+    # Reference to the parent ACT::Vertex
+    attr_reader :parent
+    ##
+    # Array of children ACT::Vertex references, ACT::Vertex
+    attr_reader :children
+    ##
+    # Array of indexes of word in dictionary
+    # Empty if it is intermediate ACT::Vertex in chain
+    attr_accessor :end_indexes
+    ##
+    # Letter representing this vertex
+    attr_accessor :char
 
+    ##
+    # Initializes new vertex
+    # * +parent+ is parent ACT::Vertex
     def initialize(parent = nil)
       @char = nil
       @parent = parent
@@ -12,6 +27,8 @@ module ACT
       @end_indexes = []
     end
 
+    ##
+    # Initializes new ACT::Vertex and adds it to the parent attribute
     def add_child(char, end_index)
       child = get_child(char)
       if child
@@ -22,10 +39,14 @@ module ACT
       end
     end
 
+    ##
+    # Returns child ACT::Vertex by letter, from children attribute 
     def get_child(char)
       @children.find { |c| c.char == char }
     end
 
+    ##
+    # Returns array of characters from array of children ACT::Vertex
     def children_chars
       @children.map(&:char)
     end
