@@ -48,5 +48,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rubocop', '~> 0.67.0'
   spec.add_development_dependency 'rubocop-performance', '~> 1.1.0'
   spec.add_development_dependency 'simplecov', '~> 0.16.0'
-  spec.add_development_dependency 'simplecov-console', '~> 0.67.0'
+  spec.add_development_dependency 'simplecov-console', '~> 0.4.0'
 end
