@@ -1,6 +1,6 @@
 RSpec.describe ACT::Trie do
   # Trie for dict "a cba cbe de a dfe abe df x dfe", with indices as in array
-  describe 'Trie' do
+  describe 'Trie building' do
     let!(:act) { ACT::Trie.new(%w[a cba cbe de a dfe abe df x dfe]) }
     let!(:text) { 'sedateragextrod' }
     let!(:first_level_chars) { %w[a c d x] }
@@ -58,11 +58,11 @@ RSpec.describe ACT::Trie do
     end
 
     it 'returns array of start char mapping' do
-      expect(act.send(:vertex_map, text) { :char }).to eq(char_map)
+      expect(act.send(:vertex_map, text.split('')) { :char }).to eq(char_map)
     end
 
     it 'returns array of start vertices mapping' do
-      act.send(:vertex_map, text) { :itself }.each.with_index do |m, i|
+      act.send(:vertex_map, text.split('')) { :vertex }.each.with_index do |m, i|
         expect(m[:key]).to be_an_instance_of(ACT::Vertex)
         expect(m[:indexes]).to eq(char_map[i][:indexes])
       end

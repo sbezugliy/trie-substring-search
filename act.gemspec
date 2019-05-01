@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://codenv.top/projects/aho-corasick-trie'
   spec.summary       = 'Aho-Corasick substring search algorithm implementation'
   spec.description   = <<-DESCRIPTION
-  This gem provides ruby library with Aho-Corasick 
+  This gem provides ruby library with Aho-Corasick
   substring search algorithm implementation.
   DESCRIPTION
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

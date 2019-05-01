@@ -6,15 +6,16 @@ module ACT
   class Trie
     attr_reader :root, :dict, :trie
     attr_accessor :text
-    def initialize(dict)
+    def initialize(dictionary)
       @root = ACT::Vertex.new
-      @dict = dict
+      @dictionary = dictionary
       @trie = build_trie
     end
 
     def parse(text)
       text = text.split('')
-      search_text(text).flatten
+      vm = vertex_map(text) { :vertex }
+      exec_branches(text, vm).flatten.compact
     end
 
     def backtrace_to_word(vertex)
@@ -25,27 +26,37 @@ module ACT
       }
     end
 
-    private
-
-    def search_text(text)
-      result = []
-      text.dup.each do |char|
-        text = text[1..-1] if text
-        result << search_next(char, text)
-      end
-      result
+    def extend_dictionay(dict)
+      build_trie(dict)
     end
 
-    def search_next(char, text)
-      vertex = @trie
+    private
+
+    def exec_branches(text, vertex_map)
+      vertex_map.map do |b|
+        b[:indexes].map do |index|
+          search(b[:key], text[index + 1..-1])
+        end
+      end
+    end
+
+    # def search_text(text, b[:key])
+    #   result = []
+    #   text.dup.each do |char|
+    #     text = text[1..-1] if text
+    #     result << search_next(char, text)
+    #   end
+    #   result
+    # end
+
+    def search(vertex, text)
       result = []
-      start_vertex = vertex.get_child(char)
-      return result unless start_vertex
+      return result unless vertex
 
-      result << backtrace_to_word(start_vertex) if end_vertex?(start_vertex)
-      return result if start_vertex.children.empty?
+      result << backtrace_to_word(vertex) if end_vertex?(vertex)
+      return result if vertex.children.empty?
 
-      ending = search_rest(start_vertex, text)
+      ending = search_rest(vertex, text)
       !ending.empty? ? (result + ending) : result
     end
 
@@ -67,7 +78,7 @@ module ACT
       @trie.children.map do |vertex|
         {
           key: vertex.send(yield),
-          indexes: text.each_char.collect.with_index { |c, i| i if c == vertex.char }.compact
+          indexes: text.collect.with_index { |c, i| i if c == vertex.char }.compact
         }
       end
     end
@@ -85,9 +96,9 @@ module ACT
       result.reverse
     end
 
-    def build_trie
+    def build_trie(dict = @dictionary)
       parent = @root
-      @dict.each_with_index do |word, index|
+      dict.each_with_index do |word, index|
         word.each_char.with_index do |char, char_index|
           end_index = char_index == (word.length - 1) ? index : nil
           @vertex = (char_index.zero? ? @root : parent)

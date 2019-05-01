@@ -32,6 +32,10 @@ module ACT
 
     private
 
+    def vertex
+      self
+    end
+
     def init_subchild(char, end_index)
       child = self.class.new(self)
       child.char = char
