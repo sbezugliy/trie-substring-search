@@ -63,6 +63,15 @@ module ACT
       result
     end
 
+    def vertex_map(text)
+      @trie.children.map do |vertex|
+        {
+          key: vertex.send(yield),
+          indexes: text.each_char.collect.with_index { |c, i| i if c == vertex.char }.compact
+        }
+      end
+    end
+
     def end_vertex?(vertex)
       !vertex.end_indexes.empty?
     end
