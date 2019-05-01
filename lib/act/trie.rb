@@ -40,15 +40,6 @@ module ACT
       end
     end
 
-    # def search_text(text, b[:key])
-    #   result = []
-    #   text.dup.each do |char|
-    #     text = text[1..-1] if text
-    #     result << search_next(char, text)
-    #   end
-    #   result
-    # end
-
     def search(vertex, text)
       result = []
       return result unless vertex
