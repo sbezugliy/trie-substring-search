@@ -14,7 +14,7 @@ module ACT
     ##
     # Trie attribute
     attr_reader :trie
-    
+
     ##
     # Initialize new trie and fill it with words from dictionary
     #
@@ -24,6 +24,12 @@ module ACT
     # * word from sentence may contain spaces and special characters, so
     #   one "word" can be the whole sentence
     # * word can be an integer, but result will be converted to the string
+    #
+    # Example:
+    #   >> ACT.new(["abc", "cde", 8, "ad f", "wer\nm"])
+    #
+    # Arguments:
+    #   dictionary: (Array)
     def initialize(dictionary)
       @root = ACT::Vertex.new
       @dictionary = dictionary
@@ -32,6 +38,20 @@ module ACT
 
     ##
     # Executes text analyze and returns map occurring words with indexes from dictionary
+    # Example:
+    #   >> act.parse('he their them height have then their shelter')
+    #   => [ {:word=>"he", :indexes=>[0, 5]},
+    #        {:word=>"their", :indexes=>[7]},
+    #        {:word=>"he", :indexes=>[0, 5]},
+    #        {:word=>"he", :indexes=>[0, 5]},
+    #        {:word=>"he", :indexes=>[0, 5]},
+    #        {:word=>"he", :indexes=>[0, 5]},
+    #        {:word=>"their", :indexes=>[7]},
+    #        {:word=>"he", :indexes=>[0, 5]},
+    #        {:word=>"she", :indexes=>[1, 8]},
+    #        {:word=>"he", :indexes=>[0, 5]}]
+    # Arguments:
+    #   text: (String)
     def parse(text)
       text = text.to_s.split('')
       vm = vertex_map(text) { :vertex }
@@ -42,6 +62,24 @@ module ACT
     # Returns hash with word and indexes at dictionary
     # * Ending vertex of chain should be used as argument, it means that it should 
     #   contain at least one value in the array of end_indexes attribute
+    # Example:
+    #   >> vertex = act.trie.get_child('s').get_child('h').get_child('e')
+    #   => #<ACT::Vertex:0x000055cabb2399d0
+    #         @char="e",
+    #         @children=[],
+    #         @end_indexes=[1, 8],
+    #         @parent=
+    #            #<ACT::Vertex:0x000055cabb239ac0
+    #               @char="h",
+    #               @children=[#<ACT::Vertex:0x000055cabb2399d0 ...>],
+    #               @end_indexes=[],
+    #               @parent=
+    #                 #<ACT::Vertex:0x000055cabb239bb0
+    #                 @char="s",
+    #                 @children=[#<ACT::Vertex:0x000055cabb239ac0 ...>],
+    #                 ...
+    # Arguments:
+    #   vertes: (ACT::Vertex)
     def backtrace_to_word(vertex)
       if vertex.end_indexes.empty?
         raise 'Argument should be ending vertex of chain, and contain at'\
@@ -58,6 +96,8 @@ module ACT
     ##
     # Adds additional words(chains of vertexes) to the trie object
     # * Argument should be array of words
+    # Example:
+    #   >> act.extend_dictionary(["our", "it", "them"])
     def extend_dictionay(dict)
       build_trie(dict)
     end

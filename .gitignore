@@ -10,3 +10,4 @@
 /spec/act/trie/search_high_load_spec.rb
 # rspec failure tracking
 .rspec_status
+*.gem

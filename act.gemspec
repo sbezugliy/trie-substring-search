@@ -11,6 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['s.bezugliy@gmail.com']
   spec.homepage      = 'https://codenv.top/projects/aho-corasick-trie'
   spec.summary       = 'Aho-Corasick substring search algorithm implementation'
+  spec.license       = "Apache-2.0"
   spec.description   = <<-DESCRIPTION
   This gem provides ruby library with Aho-Corasick
   substring search algorithm implementation.
@@ -18,11 +19,11 @@ Gem::Specification.new do |spec|
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host']  = 'https://github.com'
+    spec.metadata['allowed_push_host']  = 'https://rubygems.org'
 
     spec.metadata['homepage_uri']       = spec.homepage
     spec.metadata['source_code_uri']    = 'https://github.com/sbezugliy/aho-corasick-trie-search'
-    spec.metadata['changelog_uri']      = 'https://github.com/sbezugliy/aho-corasick-trie-search/changelog.md'
+    # spec.metadata['changelog_uri']      = 'https://github.com/sbezugliy/aho-corasick-trie-search/changelog.md'
   else
     raise 'RubyGems 2.0 or newer is required to protect against' \
       'public gem pushes.'
@@ -38,14 +39,14 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'bundler', '~> 1.17'
-  spec.add_development_dependency 'codecov'
-  spec.add_development_dependency 'pry'
+  spec.add_development_dependency 'codecov', '~> 0.1'
+  spec.add_development_dependency 'pry', '~> 0.12'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
-  spec.add_development_dependency 'rspec-benchmark'
+  spec.add_development_dependency 'rspec-benchmark', '~> 0.5.0'
   spec.add_development_dependency 'rspec-collection_matchers', '~> 1.1.0'
-  spec.add_development_dependency 'rubocop'
-  spec.add_development_dependency 'rubocop-performance'
-  spec.add_development_dependency 'simplecov'
-  spec.add_development_dependency 'simplecov-console'
+  spec.add_development_dependency 'rubocop', '~> 0.67.0'
+  spec.add_development_dependency 'rubocop-performance', '~> 1.1.0'
+  spec.add_development_dependency 'simplecov', '~> 0.16.0'
+  spec.add_development_dependency 'simplecov-console', '~> 0.4.0'
 end
