@@ -20,6 +20,11 @@ module ACT
     ##
     # Initializes new vertex
     # * +parent+ is parent ACT::Vertex
+    # Example:
+    #   >> ACT::Vertex.new(@root_vertex)
+    #   >> ACT::Vertex.new(@root_vertex)
+    # Optional arguments:
+    #   parent: (ACT::Vertex)
     def initialize(parent = nil)
       @char = nil
       @parent = parent
