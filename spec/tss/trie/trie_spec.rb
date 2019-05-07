@@ -3,7 +3,7 @@ RSpec.describe TSS::Trie do
   describe 'Trie building' do
     let(:full_tss) { TSS::Trie.new(%w[a cba cbe de a dfe abe df x dfe], :full) }
     let(:flat_tss) { TSS::Trie.new(%w[a cba cbe de a dfe abe df x dfe], :flat) }
-    let(:ac_tss) { TSS::Trie.new(%w[a cba cbe de a dfe abe df x dfe], :ac) }
+    let(:ac_tss) { TSS::Trie.new(%w[a cba cbe de a dfe abe df x dfe], :aho_corasick) }
     let(:wrong_tss) { TSS::Trie.new(%w[a cba cbe de a dfe abe df x dfe], :xxx) }
     let!(:text) { 'sedateragextrod' }
 
@@ -20,6 +20,10 @@ RSpec.describe TSS::Trie do
     it 'creates ac trie ' do
       expect(ac_tss).to be_an_instance_of(TSS::Trie)
       expect(ac_tss.trie_instance).to be_an_instance_of(TSS::Tries::AC)
+    end
+
+    it 'raises error on wrong trie type' do
+      expect { wrong_tss }.to raise_error(ArgumentError)
     end
   end
 end

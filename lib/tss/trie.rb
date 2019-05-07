@@ -67,7 +67,7 @@ module TSS
       return :AC if type == :aho_corasick
       return :Flat if type == :flat
 
-      raise 'Wrong trie type. Possible is: :full, :flat or :aho_corasick'
+      raise ArgumentError, 'Wrong trie type. Possible is: :full, :flat or :aho_corasick'
     end
   end
 end
