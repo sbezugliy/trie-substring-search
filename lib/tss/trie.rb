@@ -48,7 +48,7 @@ module TSS
     # * Argument should be array of words
     # Example:
     #   >> tss.extend_dictionary(["our", "it", "them"])
-    def extend_dictionay(dict)
+    def extend_dictionary(dict)
       @trie_instance.extend_dictionary(dict)
     end
 

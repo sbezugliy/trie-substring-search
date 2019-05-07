@@ -27,6 +27,7 @@ Or install it yourself as:
     # Array of words in the dictionary
     dictionary = %w[he she her his him he they their she]
     # Initialize trie
+    # types of trie to build :full, :flat(WIP) and :aho_corasick(WIP)
     tss = TSS::Trie.new(dictionary, :full)
     # Parse text and receive array of all occurrences of words in texts with indexes of word in dictionary
     tss.parse('he their them height have then their shelter')

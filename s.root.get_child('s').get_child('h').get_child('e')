@@ -1,0 +1,94 @@
+=> [32m#<TSS::Vertex:0x0000555e5575cfe8[0m
+ @char[32m=[0m[1;36mnil[0m,
+ @children[32m=[0m
+  [[32m#<TSS::Vertex:0x0000555e5575ccf0[0m
+    @char[32m=[0m[31m[1;31m"[0m[31mh[1;31m"[0m[31m[0m,
+    @children[32m=[0m
+     [[32m#<TSS::Vertex:0x0000555e5575cb60[0m
+       @char[32m=[0m[31m[1;31m"[0m[31me[1;31m"[0m[31m[0m,
+       @children[32m=[0m[[32m#<TSS::Vertex:0x0000555e5575c0e8[0m @char[32m=[0m[31m[1;31m"[0m[31mr[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m2[0m], @links[32m=[0m[], @parent[32m=[0m[32m#<TSS::Vertex:0x0000555e5575cb60[0m ...[32m>[0m, @root[32m=[0m[1;36mnil[0m[32m>[0m],
+       @end_indexes[32m=[0m[[1;34m0[0m, [1;34m5[0m],
+       @links[32m=[0m[],
+       @parent[32m=[0m[32m#<TSS::Vertex:0x0000555e5575ccf0[0m ...[32m>[0m,
+       @root[32m=[0m[1;36mnil[0m[32m>[0m,
+      [32m#<TSS::Vertex:0x0000555e557738d8[0m
+       @char[32m=[0m[31m[1;31m"[0m[31mi[1;31m"[0m[31m[0m,
+       @children[32m=[0m
+        [[32m#<TSS::Vertex:0x0000555e55773540[0m @char[32m=[0m[31m[1;31m"[0m[31ms[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m3[0m], @links[32m=[0m[], @parent[32m=[0m[32m#<TSS::Vertex:0x0000555e557738d8[0m ...[32m>[0m, @root[32m=[0m[1;36mnil[0m[32m>[0m,
+         [32m#<TSS::Vertex:0x0000555e55771cb8[0m @char[32m=[0m[31m[1;31m"[0m[31mm[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m4[0m], @links[32m=[0m[], @parent[32m=[0m[32m#<TSS::Vertex:0x0000555e557738d8[0m ...[32m>[0m, @root[32m=[0m[1;36mnil[0m[32m>[0m],
+       @end_indexes[32m=[0m[],
+       @links[32m=[0m[],
+       @parent[32m=[0m[32m#<TSS::Vertex:0x0000555e5575ccf0[0m ...[32m>[0m,
+       @root[32m=[0m[1;36mnil[0m[32m>[0m],
+    @end_indexes[32m=[0m[],
+    @links[32m=[0m[],
+    @parent[32m=[0m[32m#<TSS::Vertex:0x0000555e5575cfe8[0m ...[32m>[0m,
+    @root[32m=[0m[1;36mnil[0m[32m>[0m,
+   [32m#<TSS::Vertex:0x0000555e5575c868[0m
+    @char[32m=[0m[31m[1;31m"[0m[31ms[1;31m"[0m[31m[0m,
+    @children[32m=[0m
+     [[32m#<TSS::Vertex:0x0000555e5575c6b0[0m
+       @char[32m=[0m[31m[1;31m"[0m[31mh[1;31m"[0m[31m[0m,
+       @children[32m=[0m[[32m#<TSS::Vertex:0x0000555e5575c548[0m @char[32m=[0m[31m[1;31m"[0m[31me[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m1[0m, [1;34m8[0m], @links[32m=[0m[], @parent[32m=[0m[32m#<TSS::Vertex:0x0000555e5575c6b0[0m ...[32m>[0m, @root[32m=[0m[1;36mnil[0m[32m>[0m],
+       @end_indexes[32m=[0m[],
+       @links[32m=[0m[],
+       @parent[32m=[0m[32m#<TSS::Vertex:0x0000555e5575c868[0m ...[32m>[0m,
+       @root[32m=[0m[1;36mnil[0m[32m>[0m],
+    @end_indexes[32m=[0m[],
+    @links[32m=[0m[],
+    @parent[32m=[0m[32m#<TSS::Vertex:0x0000555e5575cfe8[0m ...[32m>[0m,
+    @root[32m=[0m[1;36mnil[0m[32m>[0m,
+   [32m#<TSS::Vertex:0x0000555e557717b8[0m
+    @char[32m=[0m[31m[1;31m"[0m[31mt[1;31m"[0m[31m[0m,
+    @children[32m=[0m
+     [[32m#<TSS::Vertex:0x0000555e55771650[0m
+       @char[32m=[0m[31m[1;31m"[0m[31mh[1;31m"[0m[31m[0m,
+       @children[32m=[0m
+        [[32m#<TSS::Vertex:0x0000555e557714c0[0m
+          @char[32m=[0m[31m[1;31m"[0m[31me[1;31m"[0m[31m[0m,
+          @children[32m=[0m
+           [[32m#<TSS::Vertex:0x0000555e55771290[0m @char[32m=[0m[31m[1;31m"[0m[31my[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m6[0m], @links[32m=[0m[], @parent[32m=[0m[32m#<TSS::Vertex:0x0000555e557714c0[0m ...[32m>[0m, @root[32m=[0m[1;36mnil[0m[32m>[0m,
+            [32m#<TSS::Vertex:0x0000555e55770d68[0m
+             @char[32m=[0m[31m[1;31m"[0m[31mi[1;31m"[0m[31m[0m,
+             @children[32m=[0m[[32m#<TSS::Vertex:0x0000555e55770bd8[0m @char[32m=[0m[31m[1;31m"[0m[31mr[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m7[0m], @links[32m=[0m[], @parent[32m=[0m[32m#<TSS::Vertex:0x0000555e55770d68[0m ...[32m>[0m, @root[32m=[0m[1;36mnil[0m[32m>[0m],
+             @end_indexes[32m=[0m[],
+             @links[32m=[0m[],
+             @parent[32m=[0m[32m#<TSS::Vertex:0x0000555e557714c0[0m ...[32m>[0m,
+             @root[32m=[0m[1;36mnil[0m[32m>[0m,
+            [32m#<TSS::Vertex:0x0000555e559f87c0[0m @char[32m=[0m[31m[1;31m"[0m[31mm[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m2[0m], @links[32m=[0m[], @parent[32m=[0m[32m#<TSS::Vertex:0x0000555e557714c0[0m ...[32m>[0m, @root[32m=[0m[1;36mnil[0m[32m>[0m],
+          @end_indexes[32m=[0m[],
+          @links[32m=[0m[],
+          @parent[32m=[0m[32m#<TSS::Vertex:0x0000555e55771650[0m ...[32m>[0m,
+          @root[32m=[0m[1;36mnil[0m[32m>[0m],
+       @end_indexes[32m=[0m[],
+       @links[32m=[0m[],
+       @parent[32m=[0m[32m#<TSS::Vertex:0x0000555e557717b8[0m ...[32m>[0m,
+       @root[32m=[0m[1;36mnil[0m[32m>[0m],
+    @end_indexes[32m=[0m[],
+    @links[32m=[0m[],
+    @parent[32m=[0m[32m#<TSS::Vertex:0x0000555e5575cfe8[0m ...[32m>[0m,
+    @root[32m=[0m[1;36mnil[0m[32m>[0m,
+   [32m#<TSS::Vertex:0x0000555e559f9058[0m
+    @char[32m=[0m[31m[1;31m"[0m[31mo[1;31m"[0m[31m[0m,
+    @children[32m=[0m
+     [[32m#<TSS::Vertex:0x0000555e559f8f40[0m
+       @char[32m=[0m[31m[1;31m"[0m[31mu[1;31m"[0m[31m[0m,
+       @children[32m=[0m[[32m#<TSS::Vertex:0x0000555e559f8e28[0m @char[32m=[0m[31m[1;31m"[0m[31mr[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m0[0m], @links[32m=[0m[], @parent[32m=[0m[32m#<TSS::Vertex:0x0000555e559f8f40[0m ...[32m>[0m, @root[32m=[0m[1;36mnil[0m[32m>[0m],
+       @end_indexes[32m=[0m[],
+       @links[32m=[0m[],
+       @parent[32m=[0m[32m#<TSS::Vertex:0x0000555e559f9058[0m ...[32m>[0m,
+       @root[32m=[0m[1;36mnil[0m[32m>[0m],
+    @end_indexes[32m=[0m[],
+    @links[32m=[0m[],
+    @parent[32m=[0m[32m#<TSS::Vertex:0x0000555e5575cfe8[0m ...[32m>[0m,
+    @root[32m=[0m[1;36mnil[0m[32m>[0m,
+   [32m#<TSS::Vertex:0x0000555e559f8c70[0m
+    @char[32m=[0m[31m[1;31m"[0m[31mi[1;31m"[0m[31m[0m,
+    @children[32m=[0m[[32m#<TSS::Vertex:0x0000555e559f8b58[0m @char[32m=[0m[31m[1;31m"[0m[31mt[1;31m"[0m[31m[0m, @children[32m=[0m[], @end_indexes[32m=[0m[[1;34m1[0m], @links[32m=[0m[], @parent[32m=[0m[32m#<TSS::Vertex:0x0000555e559f8c70[0m ...[32m>[0m, @root[32m=[0m[1;36mnil[0m[32m>[0m],
+    @end_indexes[32m=[0m[],
+    @links[32m=[0m[],
+    @parent[32m=[0m[32m#<TSS::Vertex:0x0000555e5575cfe8[0m ...[32m>[0m,
+    @root[32m=[0m[1;36mnil[0m[32m>[0m],
+ @end_indexes[32m=[0m[],
+ @links[32m=[0m[],
+ @parent[32m=[0m[1;36mnil[0m[32m>[0m
