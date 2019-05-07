@@ -32,7 +32,13 @@ module TSS
       def initialize(dictionary, root_vertex)
         @root = root_vertex
         @dictionary = dictionary
-        # @trie = build_trie
+        @trie = build_trie
+      end
+
+      private
+
+      def build_trie
+        @root
       end
     end
   end
