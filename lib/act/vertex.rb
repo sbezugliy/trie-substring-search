@@ -4,11 +4,18 @@ module ACT
   # Trie vertex class
   class Vertex
     ##
-    # Reference to the parent ACT::Vertex
-    attr_reader :parent
+    # Reference to the root vertex of the trie
+    attr_accessor :root
     ##
-    # Array of children ACT::Vertex references, ACT::Vertex
+    # Reference to the parent ACT::Vertex
+    attr_accessor :parent
+    ##
+    # Array of children ACT::Vertex references for nested models(full trie, Aho-Corasick trie)
+    # or as list of nested vertexes of root vertex of flat trie
     attr_reader :children
+    ##
+    # Array of ACT::Vertex links for flat trie model, also used as suffixes of Aho-Corasick trie
+    attr_reader :links
     ##
     # Array of indexes of word in dictionary
     # Empty if it is intermediate ACT::Vertex in chain
@@ -29,7 +36,9 @@ module ACT
       @char = nil
       @parent = parent
       @children = []
+      @links = []
       @end_indexes = []
+      yield(self) if block_given?
     end
 
     ##
@@ -51,6 +60,18 @@ module ACT
     end
 
     ##
+    # Adds reference to the linked vertexes
+    def add_link(vertex, end_index = nil)
+      @links << ACT::Link.new(vertex, end_index)
+    end
+
+    ##
+    # Returns link by character
+    def get_link(char)
+      @links.find { |l| l.char == char }
+    end
+
+    ##
     # Returns array of characters from array of children ACT::Vertex
     def children_chars
       @children.map(&:char)
@@ -65,6 +86,7 @@ module ACT
     def init_subchild(char, end_index)
       child = self.class.new(self)
       child.char = char
+      child.root = @root
       child.end_indexes << end_index unless end_index.nil?
       @children << child
       child
