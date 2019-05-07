@@ -19,7 +19,7 @@ module TSS
 
       ##
       # Adds additional words(chains of vertexes) to the trie object
-      def extend_dictionay(_dict)
+      def extend_dictionary(_dict)
         raise 'WIP'
       end
     end

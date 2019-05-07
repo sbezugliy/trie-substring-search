@@ -15,11 +15,9 @@ module TSS
     ##
     # Trie class reference switched by type
     attr_reader :trie_class
-
     ##
     # Trie class instance
     attr_reader :trie_instance
-
     ##
     # Initialize new trie and fill it with words from dictionary
     def initialize(dictionary, type = :full)
@@ -48,7 +46,7 @@ module TSS
     # * Argument should be array of words
     # Example:
     #   >> tss.extend_dictionary(["our", "it", "them"])
-    def extend_dictionay(dict)
+    def extend_dictionary(dict)
       @trie_instance.extend_dictionary(dict)
     end
 

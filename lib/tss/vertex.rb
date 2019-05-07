@@ -77,11 +77,11 @@ module TSS
       @children.map(&:char)
     end
 
-    private
-
     def vertex
       self
     end
+
+    private
 
     def init_subchild(char, end_index)
       child = self.class.new(self)
