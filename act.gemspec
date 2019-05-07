@@ -5,7 +5,7 @@ require './lib/act/act'
 require './lib/act/trie'
 require './lib/act/vertex'
 Gem::Specification.new do |spec|
-  spec.name          = 'aho-corasick-trie-search'
+  spec.name          = 'trie-substring-search'
   spec.version       = ACT::VERSION
   spec.authors       = ['Sergey Bezugliy']
   spec.email         = ['s.bezugliy@gmail.com']
