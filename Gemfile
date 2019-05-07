@@ -2,5 +2,5 @@ source 'https://rubygems.org'
 
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
-# Specify your gem's dependencies in aho-corasick-trie-search.gemspec
+# Specify your gem's dependencies in tss.gemspec
 gemspec
