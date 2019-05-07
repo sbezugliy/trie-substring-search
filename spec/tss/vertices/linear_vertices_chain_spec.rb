@@ -1,15 +1,15 @@
-RSpec.describe ACT::Vertex do
+RSpec.describe TSS::Vertex do
   # Creating chain of vertex for cba word with index 7
   # ("c", nil) -> ("b", nil) -> ("a", 7)
   describe 'Linear vertices in trie' do
-    let!(:root) { ACT::Vertex.new }
+    let!(:root) { TSS::Vertex.new }
     let!(:c_vert) { root.add_child('c', nil) }
     let!(:b_vert) { c_vert.add_child('b', nil) }
     let!(:a_vert) { b_vert.add_child('a', 7) }
-    it 'child vertices should be instances of ACT::Vertex, so exist' do
-      expect(c_vert).to be_an_instance_of(ACT::Vertex)
-      expect(b_vert).to be_an_instance_of(ACT::Vertex)
-      expect(a_vert).to be_an_instance_of(ACT::Vertex)
+    it 'child vertices should be instances of TSS::Vertex, so exist' do
+      expect(c_vert).to be_an_instance_of(TSS::Vertex)
+      expect(b_vert).to be_an_instance_of(TSS::Vertex)
+      expect(a_vert).to be_an_instance_of(TSS::Vertex)
     end
 
     it 'nesting root -> c_vert is correct' do

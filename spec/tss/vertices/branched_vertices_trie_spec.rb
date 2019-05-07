@@ -1,10 +1,10 @@
-RSpec.describe ACT::Vertex do
+RSpec.describe TSS::Vertex do
   # Trie for dict [..., "cb", ., "ce"]
   #             -> ("b", 5)
   # ("c", nil)  |
   #             -> ("e", 7)
   describe 'Branched vertices in trie' do
-    let!(:root) { ACT::Vertex.new }
+    let!(:root) { TSS::Vertex.new }
     let!(:c_vert) { root.add_child('c', nil) }
     let!(:b_vert) { c_vert.add_child('b', 5) }
     let!(:e_vert) { c_vert.add_child('e', 7) }

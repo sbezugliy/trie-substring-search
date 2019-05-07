@@ -22,8 +22,9 @@ RSpec.describe TSS::Trie do
       expect(ac_tss.trie_instance).to be_an_instance_of(TSS::Tries::AC)
     end
 
-    it 'raises error on wrong trie type' do
+    it 'raises argument exception on wrong trie type' do
       expect { wrong_tss }.to raise_error(ArgumentError)
     end
+
   end
 end
