@@ -1,5 +1,7 @@
 module TSS
   module Tries
+    ##
+    # Aho-Corasick trie class
     class AC < Base
       ##
       # Executes text analyze and returns map occurring words with indexes from dictionary

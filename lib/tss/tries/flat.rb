@@ -2,7 +2,7 @@
 module TSS
   module Tries
     ##
-    # Main class for creating Aho-Corasick Trie from array of words of dictionary
+    # Main class for creating Flat Trie from array of words of dictionary
     class Flat < Base
       ##
       # Executes text analyze and returns map occurring words with indexes from dictionary
