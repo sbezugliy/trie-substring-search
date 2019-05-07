@@ -1,5 +1,4 @@
-module ACT
-
+module TSS
   ##
   # Object representing links between vertexes
   class Link

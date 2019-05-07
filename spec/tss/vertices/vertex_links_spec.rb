@@ -2,26 +2,26 @@ RSpec.describe ACT::Vertex do
   describe 'Linked vertexes features' do
     let!(:root_vertex) { ACT::Vertex.new }
 
-    let!(:link_a) {
+    let!(:link_a) do
       link_a = root_vertex.add_child('a', nil)
       link_a.root = root_vertex
       link_a.parent = root_vertex
       link_a
-    }
+    end
 
-    let!(:link_b) {
+    let!(:link_b) do
       link_b = root_vertex.add_child('b', nil)
       link_b.root = root_vertex
       link_b.parent = root_vertex
       link_b
-    }
+    end
 
-    let!(:link_c) {
+    let!(:link_c) do
       link_c = root_vertex.add_child('c', nil)
       link_c.root = root_vertex
       link_c.parent = root_vertex
       link_c
-    }
+    end
 
     let(:linked_chain) do
       link_a.add_link(link_b)

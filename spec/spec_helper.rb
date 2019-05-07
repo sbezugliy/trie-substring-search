@@ -2,9 +2,12 @@ require 'bundler/setup'
 require 'rspec-benchmark'
 require 'rspec/collection_matchers'
 require 'simplecov'
-require 'act/act'
-require 'act/trie'
-require 'act/vertex'
+require 'tss/tss'
+require 'tss/trie'
+require 'tss/tries/full'
+require 'tss/tries/flat'
+require 'tss/tries/ac'
+require 'tss/vertex'
 
 RSpec.configure do |config|
   config.add_setting :fixtures_path
@@ -14,7 +17,7 @@ RSpec.configure do |config|
   # Disable RSpec exposing methods globally on `Module` and `main`
   config.disable_monkey_patching!
 
-  config.fixtures_path = File.join(__dir__, 'act', 'fixtures')
+  config.fixtures_path = File.join(__dir__, 'tss', 'fixtures')
 
   config.expect_with :rspec do |c|
     c.syntax = :expect
