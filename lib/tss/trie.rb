@@ -15,11 +15,9 @@ module TSS
     ##
     # Trie class reference switched by type
     attr_reader :trie_class
-
     ##
     # Trie class instance
     attr_reader :trie_instance
-
     ##
     # Initialize new trie and fill it with words from dictionary
     def initialize(dictionary, type = :full)
