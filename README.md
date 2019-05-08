@@ -1,4 +1,4 @@
-# Aho-Corasick Trie Substring Search
+# Trie Substring Search
 
 [![Build Status](https://cloud.drone.io/api/badges/sbezugliy/trie-substring-search/status.svg)](https://cloud.drone.io/sbezugliy/trie-substring-search)
 
@@ -34,7 +34,7 @@ Or install it yourself as:
     # => [{:word=>"he", :indexes=>[0, 5]},
     #  {:word=>"their", :indexes=>[7]},
     #  {:word=>"he", :indexes=>[0, 5]},
-    #  {:word=>"he", :indexes=>[0, 5]},
+    #  {:word=>"he", :indexes=>[0, ''$'\200\274\240\235\357''U'5]},
     #  {:word=>"he", :indexes=>[0, 5]},
     #  {:word=>"he", :indexes=>[0, 5]},
     #  {:word=>"their", :indexes=>[7]},

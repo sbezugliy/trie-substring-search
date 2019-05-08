@@ -28,7 +28,7 @@ module TSS
     end
 
     ##
-    # Executes text analyze and returns map occurring words with indexes from dictionary
+    # Executes text analyzis and returns map occurring words with indexes from dictionary
     def parse(text)
       @trie_instance.parse(text)
     end

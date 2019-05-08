@@ -17,8 +17,8 @@ Gem::Specification.new do |spec|
   spec.summary       = 'Trie based substring search algorithm implementation'
   spec.license       = 'Apache-2.0'
   spec.description   = <<-DESCRIPTION
-  This gem provides ruby library with algorithms for trie based
-  substring search.
+    This gem provides ruby library with algorithms for trie based
+    substring search.
   DESCRIPTION
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.

@@ -27,13 +27,13 @@ module TSS
       end
 
       ##
-      # Returns hash with word and indexes at dictionary
+      # Returns hash with vertexes that represents letters of word and indexes of word in dictionary
       # * Ending vertex of chain should be used as argument, it means that it should
       #   contain at least one value in the array of end_indexes attribute
       # Example:
-      #                 ...
+      #   backtrace_to_word(vertex)
       # Arguments:
-      #   vertes: (TSS::Vertex)
+      #   vertex: (TSS::Vertex) - ending vertex of chain of letters
       def backtrace_to_word(vertex)
         if vertex.end_indexes.empty?
           raise 'Argument should be ending vertex of chain, and contain at'\
