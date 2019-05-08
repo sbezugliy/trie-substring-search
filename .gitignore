@@ -6,8 +6,8 @@
 /pkg/
 /spec/reports/
 /tmp/
-/spec/act/fixtures/*
-/spec/act/trie/search_high_load_spec.rb
+/spec/tss/fixtures/*
+/spec/tss/trie/search_high_load_spec.rb
 # rspec failure tracking
 .rspec_status
 *.gem
