@@ -1,6 +1,6 @@
 module TSS
   ##
-  # Object representing links between vertexes
+  # Class representing links(suffixes) between vertexes
   class Link
     ##
     # Linked vertex

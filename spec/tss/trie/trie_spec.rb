@@ -25,6 +25,5 @@ RSpec.describe TSS::Trie do
     it 'raises argument exception on wrong trie type' do
       expect { wrong_tss }.to raise_error(ArgumentError)
     end
-
   end
 end
