@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe TSS::Vertex do
   describe 'Linked vertexes features' do
     let!(:root_vertex) { TSS::Vertex.new }

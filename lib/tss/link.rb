@@ -1,3 +1,7 @@
+# frozen_string_literal: true
+
+##
+# TSS module
 module TSS
   ##
   # Class representing links(suffixes) between vertexes
@@ -9,7 +13,8 @@ module TSS
     # Character to simplify search
     attr_reader :char
     ##
-    # Index of word in dictionary if vertex is ending, or nil if vertex is suffix
+    # Index of word in dictionary if vertex is ending, or nil if vertex
+    # is suffix
     attr_accessor :end_index
 
     ##

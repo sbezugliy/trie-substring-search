@@ -1,7 +1,10 @@
+# frozen_string_literal: true
+
 # TSS module
 module TSS
   ##
-  # Main class for creating Trie Substring Search from array of words of dictionary
+  # Main class for creating Trie Substring Search from array of words of
+  # dictionary
   class Trie
     ##
     # Root vertex
@@ -28,15 +31,16 @@ module TSS
     end
 
     ##
-    # Executes text analyzis and returns map occurring words with indexes from dictionary
+    # Executes text analyzis and returns map occurring words with indexes from
+    # dictionary
     def parse(text)
       @trie_instance.parse(text)
     end
 
     ##
     # Returns hash with word and indexes at dictionary
-    # * Ending vertex of chain should be used as argument, it means that it should
-    #   contain at least one value in the array of end_indexes attribute
+    # * Ending vertex of chain should be used as argument, it means that it
+    #   should contain at least one value in the array of end_indexes attribute
     def backtrace_to_word(vertex)
       @trie_instance.backtrace_to_word(vertex)
     end
@@ -65,7 +69,8 @@ module TSS
       return :AC if type == :aho_corasick
       return :Flat if type == :flat
 
-      raise ArgumentError, 'Wrong trie type. Possible is: :full, :flat or :aho_corasick'
+      raise ArgumentError, 'Wrong trie type. Possible is: :full, :flat or \
+      :aho_corasick'
     end
   end
 end

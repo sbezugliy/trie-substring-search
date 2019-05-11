@@ -1,0 +1,4 @@
+Metrics/BlockLength:
+  Max: 250
+  Include:
+    - spec/**/*_spec.rb

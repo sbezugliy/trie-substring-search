@@ -1,9 +1,14 @@
+# frozen_string_literal: true
+
 RSpec.describe TSS::Trie do
   # Trie for dict "a cba cbe de a dfe abe df x dfe", with indices as in array
   describe 'Trie building' do
     let(:full_tss) { TSS::Trie.new(%w[a cba cbe de a dfe abe df x dfe], :full) }
     let(:flat_tss) { TSS::Trie.new(%w[a cba cbe de a dfe abe df x dfe], :flat) }
-    let(:ac_tss) { TSS::Trie.new(%w[a cba cbe de a dfe abe df x dfe], :aho_corasick) }
+    let(:ac_tss) do
+      TSS::Trie.new(%w[a cba cbe de a dfe abe df x dfe],
+                    :aho_corasick)
+    end
     let(:wrong_tss) { TSS::Trie.new(%w[a cba cbe de a dfe abe df x dfe], :xxx) }
     let!(:text) { 'sedateragextrod' }
 

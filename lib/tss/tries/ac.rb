@@ -1,11 +1,17 @@
+# frozen_string_literal: true
+
+##
+# TSS module
 module TSS
+  ##
+  # Tries module
   module Tries
     ##
     # Aho-Corasick trie class
     class AC < Base
       ##
-      # Executes text analyze and returns map occurring words with indexes from dictionary
-
+      # Executes text analyze and returns map occurring words with indexes
+      # from dictionary
       def parse
         raise 'WIP'
       end

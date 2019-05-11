@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'bundler/setup'
 require 'rspec-benchmark'
 require 'rspec/collection_matchers'
