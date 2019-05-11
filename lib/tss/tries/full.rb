@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# frozen_string_literal: false
 
 # TSS module
 module TSS
@@ -101,7 +101,7 @@ module TSS
         @trie.children.map do |vertex|
           {
             key: vertex.send(yield),
-            indexes: text.collect.with_index { |c, i| i if c == vertex.char }\
+            indexes: text.collect.with_index { |c, i| i if c == vertex.char }
                          .compact
           }
         end
