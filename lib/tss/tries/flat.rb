@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # TSS module
 module TSS
   module Tries
@@ -5,8 +7,8 @@ module TSS
     # Main class for creating Flat Trie from array of words of dictionary
     class Flat < Base
       ##
-      # Executes text analyze and returns map occurring words with indexes from dictionary
-
+      # Executes text analyze and returns map occurring words with indexes
+      # from dictionary
       def parse(_text)
         raise 'WIP'
       end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe TSS::Vertex do
   # Trie for dict [..., "cb", ., "ce"]
   #             -> ("b", 5)

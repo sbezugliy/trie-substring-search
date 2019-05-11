@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # TSS module
 module TSS
   ##
@@ -10,11 +12,13 @@ module TSS
     # Reference to the parent TSS::Vertex
     attr_accessor :parent
     ##
-    # Array of children TSS::Vertex references for nested models(full trie, Aho-Corasick trie)
-    # or as list of nested vertexes of root vertex of flat trie
+    # Array of children TSS::Vertex references for nested models
+    # (full trie, Aho-Corasick trie) or as list of nested vertexes of root
+    # vertex of flat trie
     attr_reader :children
     ##
-    # Array of TSS::Vertex links for flat trie model, also used as suffixes of Aho-Corasick trie
+    # Array of TSS::Vertex links for flat trie model, also used as
+    # suffixes of Aho-Corasick trie
     attr_reader :links
     ##
     # Array of indexes of word in dictionary

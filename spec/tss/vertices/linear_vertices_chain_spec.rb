@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe TSS::Vertex do
   # Creating chain of vertex for cba word with index 7
   # ("c", nil) -> ("b", nil) -> ("a", 7)

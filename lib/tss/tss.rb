@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'tss/version'
 require 'tss/trie'
 require 'tss/tries/base'

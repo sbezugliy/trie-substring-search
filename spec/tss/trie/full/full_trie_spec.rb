@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe TSS::Tries::Full do
   # Trie for dict "a cba cbe de a dfe abe df x dfe", with indices as in array
   describe 'Trie building' do
@@ -11,7 +13,14 @@ RSpec.describe TSS::Tries::Full do
     let!(:cbe_vert_indexes) { [2] }
     let!(:dfe_vert_indexes) { [5, 9] }
     let!(:df_vert_indexes) { [7] }
-    let!(:char_map) { [{ key: 'a', indexes: [3, 7] }, { key: 'c', indexes: [] }, { key: 'd', indexes: [2, 14] }, { key: 'x', indexes: [10] }] }
+    let!(:char_map) do
+      [
+        { key: 'a', indexes: [3, 7] },
+        { key: 'c', indexes: [] },
+        { key: 'd', indexes: [2, 14] },
+        { key: 'x', indexes: [10] }
+      ]
+    end
 
     it 'should be instance of TSS::Trie with trie of TSS::Vertex' do
       expect(tss).to be_an_instance_of(TSS::Trie)
@@ -59,11 +68,13 @@ RSpec.describe TSS::Tries::Full do
     end
 
     it 'returns array of start char mapping' do
-      expect(tss.trie_instance.send(:vertex_map, text.split('')) { :char }).to eq(char_map)
+      expect(tss.trie_instance.send(:vertex_map, text.split('')) { :char }).to \
+        eq(char_map)
     end
 
     it 'returns array of start vertices mapping' do
-      tss.trie_instance.send(:vertex_map, text.split('')) { :vertex }.each.with_index do |m, i|
+      tss.trie_instance.send(:vertex_map, text.split('')) \
+                        { :vertex }.each.with_index do |m, i|
         expect(m[:key]).to be_an_instance_of(TSS::Vertex)
         expect(m[:indexes]).to eq(char_map[i][:indexes])
       end

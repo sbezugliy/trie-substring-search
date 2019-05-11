@@ -1,11 +1,16 @@
+# frozen_string_literal: false
+
 # TSS module
 module TSS
+  ##
+  # Tries module
   module Tries
     ##
     # Main class for creating Full Trie from array of words of dictionary
     class Full < Base
       ##
-      # Executes text analyze and returns map occurring words with indexes from dictionary
+      # Executes text analyze and returns map occurring words with indexes
+      # from dictionary
       # Example:
       #   >> tss.parse('he their them height have then their shelter')
       #   => [ {:word=>"he", :indexes=>[0, 5]},
@@ -27,9 +32,10 @@ module TSS
       end
 
       ##
-      # Returns hash with vertexes that represents letters of word and indexes of word in dictionary
-      # * Ending vertex of chain should be used as argument, it means that it should
-      #   contain at least one value in the array of end_indexes attribute
+      # Returns hash with vertexes that represents letters of word and indexes
+      # of word in dictionary
+      # * Ending vertex of chain should be used as argument, it means that it
+      # should contain at least one value in the array of end_indexes attribute
       # Example:
       #   backtrace_to_word(vertex)
       # Arguments:
@@ -80,13 +86,13 @@ module TSS
       def search_rest(vertex, text)
         result = []
         text.each do |char|
-          current_vertex = vertex.get_child(char)
-          break if current_vertex.nil?
+          c_vertex = vertex.get_child(char)
+          break if c_vertex.nil?
 
-          result << backtrace_to_word(current_vertex) if end_vertex?(current_vertex)
-          break if current_vertex.children.empty?
+          result << backtrace_to_word(c_vertex) if end_vertex?(c_vertex)
+          break if c_vertex.children.empty?
 
-          vertex = current_vertex
+          vertex = c_vertex
         end
         result
       end
@@ -95,7 +101,8 @@ module TSS
         @trie.children.map do |vertex|
           {
             key: vertex.send(yield),
-            indexes: text.collect.with_index { |c, i| i if c == vertex.char }.compact
+            indexes: text.collect.with_index { |c, i| i if c == vertex.char }
+                         .compact
           }
         end
       end

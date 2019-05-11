@@ -1,8 +1,14 @@
+# frozen_string_literal: true
+
+##
 # TSS module
 module TSS
+  ##
+  # Tries module
   module Tries
     ##
-    # Main class for creating Aho-Corasick Trie from array of words of dictionary
+    # Main class for creating Aho-Corasick Trie from array of words of
+    # dictionary
     class Base
       ##
       # Root vertex
@@ -37,6 +43,8 @@ module TSS
 
       private
 
+      ##
+      # Stub superclass method for build_trie
       def build_trie
         @root
       end

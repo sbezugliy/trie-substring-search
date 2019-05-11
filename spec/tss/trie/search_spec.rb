@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe TSS::Trie do
   # Trie for dict "a cba cbe de a dfe abe df x dfe", with indices as in array
   describe 'Search words in text using trie' do

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe TSS::Vertex do
   describe 'Root vertice' do
     let!(:root) { TSS::Vertex.new }
