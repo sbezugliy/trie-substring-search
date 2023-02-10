@@ -1,7 +1,10 @@
-module ACT
+# frozen_string_literal: true
 
+##
+# TSS module
+module TSS
   ##
-  # Object representing links between vertexes
+  # Class representing links(suffixes) between vertexes
   class Link
     ##
     # Linked vertex
@@ -10,7 +13,8 @@ module ACT
     # Character to simplify search
     attr_reader :char
     ##
-    # Index of word in dictionary if vertex is ending, or nil if vertex is suffix
+    # Index of word in dictionary if vertex is ending, or nil if vertex
+    # is suffix
     attr_accessor :end_index
 
     ##

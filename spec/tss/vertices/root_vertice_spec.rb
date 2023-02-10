@@ -1,9 +1,11 @@
-RSpec.describe ACT::Vertex do
-  describe 'Root vertice' do
-    let!(:root) { ACT::Vertex.new }
+# frozen_string_literal: true
 
-    it 'should be instace of ACT::Vertex' do
-      expect(root).to be_an_instance_of(ACT::Vertex)
+RSpec.describe TSS::Vertex do
+  describe 'Root vertice' do
+    let!(:root) { TSS::Vertex.new }
+
+    it 'should be instace of TSS::Vertex' do
+      expect(root).to be_an_instance_of(TSS::Vertex)
     end
 
     it 'should contain initial attributes with correct values' do

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    trie-substring-search (0.1.1.1)
+    trie-substring-search (0.1.0.0)
 
 GEM
   remote: https://rubygems.org/
@@ -78,7 +78,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.17)
+  bundler (~> 1.17.0)
   codecov (~> 0.1)
   pry (~> 0.12)
   rake (~> 10.0)
@@ -92,4 +92,4 @@ DEPENDENCIES
   trie-substring-search!
 
 BUNDLED WITH
-   1.17.2
+   1.17.3

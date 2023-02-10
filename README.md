@@ -1,16 +1,16 @@
-# Aho-Corasick Trie Substring Search
+# Trie Substring Search
 
-[![Build Status](https://cloud.drone.io/api/badges/sbezugliy/aho-corasick-trie-search/status.svg)](https://cloud.drone.io/sbezugliy/aho-corasick-trie-search)
+[![Build Status](https://cloud.drone.io/api/badges/sbezugliy/trie-substring-search/status.svg)](https://cloud.drone.io/sbezugliy/trie-substring-search)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/a491e842aac7b4f62751/maintainability)](https://codeclimate.com/github/sbezugliy/aho-corasick-trie-search/maintainability)
-[![codecov](https://codecov.io/gh/sbezugliy/aho-corasick-trie-search/branch/master/graph/badge.svg)](https://codecov.io/gh/sbezugliy/aho-corasick-trie-search)
+[![Maintainability](https://api.codeclimate.com/v1/badges/94c864de2611aedac431/maintainability)](https://codeclimate.com/github/sbezugliy/trie-substring-search/maintainability)
+[![codecov](https://codecov.io/gh/sbezugliy/trie-substring-search/branch/master/graph/badge.svg)](https://codecov.io/gh/sbezugliy/trie-substring-search)
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'aho-corasick-trie-search'
+gem 'trie-substring-search'
 ```
 
 And then execute:
@@ -19,7 +19,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install aho-corasick-trie-search
+    $ gem install trie-substring-search
 
 ## Usage
 
@@ -27,13 +27,14 @@ Or install it yourself as:
     # Array of words in the dictionary
     dictionary = %w[he she her his him he they their she]
     # Initialize trie
-    act = ACT::Trie.new(dictionary)
+    # types of trie to build :full, :flat(WIP) and :aho_corasick(WIP)
+    tss = TSS::Trie.new(dictionary, :full)
     # Parse text and receive array of all occurrences of words in texts with indexes of word in dictionary
-    act.parse('he their them height have then their shelter')
+    tss.parse('he their them height have then their shelter')
     # => [{:word=>"he", :indexes=>[0, 5]},
     #  {:word=>"their", :indexes=>[7]},
     #  {:word=>"he", :indexes=>[0, 5]},
-    #  {:word=>"he", :indexes=>[0, 5]},
+    #  {:word=>"he", :indexes=>[0, ''$'\200\274\240\235\357''U'5]},
     #  {:word=>"he", :indexes=>[0, 5]},
     #  {:word=>"he", :indexes=>[0, 5]},
     #  {:word=>"their", :indexes=>[7]},
@@ -41,9 +42,9 @@ Or install it yourself as:
     #  {:word=>"she", :indexes=>[1, 8]},
     #  {:word=>"he", :indexes=>[0, 5]}]
     # Add additional words to the dictionary
-    act.extend_dictionary(["our", "it", "them"])
+    tss.extend_dictionary(["our", "it", "them"])
     # Get end vertex of word 'they'
-    vertex = act.trie.get_child('s').get_child('h').get_child('e')
+    vertex = tss.root.get_child('s').get_child('h').get_child('e')
     # => #<ACT::Vertex:0x000055cabb2399d0
     #  @char="e",
     #  @children=[],
@@ -61,7 +62,7 @@ Or install it yourself as:
     vertex.end_indexes
     # => [1, 8]
     # Recover word from trie with indexes in dictionary
-    act.backtrace_to_word(vertex)
+    tss.backtrace_to_word(vertex)
     # => {:word=>"she", :indexes=>[1, 8]}
 ```
 

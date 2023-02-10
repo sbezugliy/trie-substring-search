@@ -1,5 +1,7 @@
-# ACT module
-module ACT
+# frozen_string_literal: true
+
+# TSS module
+module TSS
   ##
   # Trie vertex class
   class Vertex
@@ -7,18 +9,20 @@ module ACT
     # Reference to the root vertex of the trie
     attr_accessor :root
     ##
-    # Reference to the parent ACT::Vertex
+    # Reference to the parent TSS::Vertex
     attr_accessor :parent
     ##
-    # Array of children ACT::Vertex references for nested models(full trie, Aho-Corasick trie)
-    # or as list of nested vertexes of root vertex of flat trie
+    # Array of children TSS::Vertex references for nested models
+    # (full trie, Aho-Corasick trie) or as list of nested vertexes of root
+    # vertex of flat trie
     attr_reader :children
     ##
-    # Array of ACT::Vertex links for flat trie model, also used as suffixes of Aho-Corasick trie
+    # Array of TSS::Vertex links for flat trie model, also used as
+    # suffixes of Aho-Corasick trie
     attr_reader :links
     ##
     # Array of indexes of word in dictionary
-    # Empty if it is intermediate ACT::Vertex in chain
+    # Empty if it is intermediate TSS::Vertex in chain
     attr_accessor :end_indexes
     ##
     # Letter representing this vertex
@@ -26,12 +30,12 @@ module ACT
 
     ##
     # Initializes new vertex
-    # * +parent+ is parent ACT::Vertex
+    # * +parent+ is parent TSS::Vertex
     # Example:
-    #   >> ACT::Vertex.new(@root_vertex)
-    #   >> ACT::Vertex.new(@root_vertex)
+    #   >> TSS::Vertex.new(@root_vertex)
+    #   >> TSS::Vertex.new(@root_vertex)
     # Optional arguments:
-    #   parent: (ACT::Vertex)
+    #   parent: (TSS::Vertex)
     def initialize(parent = nil)
       @char = nil
       @parent = parent
@@ -42,7 +46,7 @@ module ACT
     end
 
     ##
-    # Initializes new ACT::Vertex and adds it to the parent attribute
+    # Initializes new TSS::Vertex and adds it to the parent attribute
     def add_child(char, end_index)
       child = get_child(char)
       if child
@@ -54,7 +58,7 @@ module ACT
     end
 
     ##
-    # Returns child ACT::Vertex by letter, from children attribute 
+    # Returns child TSS::Vertex by letter, from children attribute
     def get_child(char)
       @children.find { |c| c.char == char }
     end
@@ -62,7 +66,7 @@ module ACT
     ##
     # Adds reference to the linked vertexes
     def add_link(vertex, end_index = nil)
-      @links << ACT::Link.new(vertex, end_index)
+      @links << TSS::Link.new(vertex, end_index)
     end
 
     ##
@@ -72,16 +76,16 @@ module ACT
     end
 
     ##
-    # Returns array of characters from array of children ACT::Vertex
+    # Returns array of characters from array of children TSS::Vertex
     def children_chars
       @children.map(&:char)
     end
 
-    private
-
     def vertex
       self
     end
+
+    private
 
     def init_subchild(char, end_index)
       child = self.class.new(self)
