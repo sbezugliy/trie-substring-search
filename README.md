@@ -7,6 +7,8 @@
 
 ## Installation
 
+Implementation of text syntax analyzer, which represents text as non symetric trie of chars or substrings by dictionary or list of keywords. Similar to Aho-Corasick algorithm, but with modifications, there is removed suffixes and added recovering text from the trie.
+
 Add this line to your application's Gemfile:
 
 ```ruby
@@ -25,12 +27,12 @@ Or install it yourself as:
 
 ```ruby
     # Array of words in the dictionary
-    dictionary = %w[he she her his him he they their she]
+dictionary = %w[he she her his him he they their she]
     # Initialize trie
     # types of trie to build :full, :flat(WIP) and :aho_corasick(WIP)
-    tss = TSS::Trie.new(dictionary, :full)
+tss = TSS::Trie.new(dictionary, :full)
     # Parse text and receive array of all occurrences of words in texts with indexes of word in dictionary
-    tss.parse('he their them height have then their shelter')
+tss.parse('he their them height have then their shelter')
     # => [{:word=>"he", :indexes=>[0, 5]},
     #  {:word=>"their", :indexes=>[7]},
     #  {:word=>"he", :indexes=>[0, 5]},
@@ -42,9 +44,9 @@ Or install it yourself as:
     #  {:word=>"she", :indexes=>[1, 8]},
     #  {:word=>"he", :indexes=>[0, 5]}]
     # Add additional words to the dictionary
-    tss.extend_dictionary(["our", "it", "them"])
+tss.extend_dictionary(%w[our it them])
     # Get end vertex of word 'they'
-    vertex = tss.root.get_child('s').get_child('h').get_child('e')
+vertex = tss.root.get_child('s').get_child('h').get_child('e')
     # => #<ACT::Vertex:0x000055cabb2399d0
     #  @char="e",
     #  @children=[],
@@ -59,10 +61,10 @@ Or install it yourself as:
     #      @char="s",
     #      @children=[#<ACT::Vertex:0x000055cabb239ac0 ...>],
     # get array of indexes of word
-    vertex.end_indexes
+vertex.end_indexes
     # => [1, 8]
     # Recover word from trie with indexes in dictionary
-    tss.backtrace_to_word(vertex)
+tss.backtrace_to_word(vertex)
     # => {:word=>"she", :indexes=>[1, 8]}
 ```
 

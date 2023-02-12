@@ -8,8 +8,6 @@ require 'tss/tss'
 require 'tss/trie'
 require 'tss/tries/base'
 require 'tss/tries/full'
-require 'tss/tries/flat'
-require 'tss/tries/ac'
 require 'tss/vertex'
 
 RSpec.configure do |config|
