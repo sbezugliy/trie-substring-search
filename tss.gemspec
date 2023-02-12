@@ -2,14 +2,9 @@
 
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require './lib/tss/version'
+
 require './lib/tss/tss'
-require './lib/tss/trie'
-require './lib/tss/tries/base'
-require './lib/tss/tries/ac'
-require './lib/tss/tries/full'
-require './lib/tss/tries/flat'
-require './lib/tss/vertex'
+
 Gem::Specification.new do |spec|
   spec.name          = 'trie-substring-search'
   spec.version       = TSS::VERSION

@@ -7,6 +7,8 @@
 
 ## Installation
 
+Implementation of text syntax analyzer, which represents text as non symetric trie of chars or substrings by dictionary or list of keywords. Similar to Aho-Corasick algorithm, but with modifications, there is removed suffixes and added recovering text from the trie.
+
 Add this line to your application's Gemfile:
 
 ```ruby
