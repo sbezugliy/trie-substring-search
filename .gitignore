@@ -13,3 +13,4 @@
 *.gem
 .ruby-gemset
 .ruby-version
+Gemfile.lock
