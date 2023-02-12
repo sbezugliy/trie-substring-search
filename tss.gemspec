@@ -2,14 +2,9 @@
 
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require './lib/tss/version'
+
 require './lib/tss/tss'
-require './lib/tss/trie'
-require './lib/tss/tries/base'
-require './lib/tss/tries/ac'
-require './lib/tss/tries/full'
-require './lib/tss/tries/flat'
-require './lib/tss/vertex'
+
 Gem::Specification.new do |spec|
   spec.name          = 'trie-substring-search'
   spec.version       = TSS::VERSION
@@ -18,7 +13,8 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://codenv.top/projects/trie-substring-search'
   spec.summary       = 'Trie based substring search algorithm implementation'
   spec.license       = 'Apache-2.0'
-  spec.description   = <<-DESCRIPTION
+  spec.required_ruby_version = '~> 3.1'
+  spec.description = <<-DESCRIPTION
     This gem provides ruby library with algorithms for trie based
     substring search.
   DESCRIPTION
@@ -34,7 +30,7 @@ Gem::Specification.new do |spec|
     # spec.metadata['changelog_uri']      = 'https://github.com/sbezugliy/trie-substring-search/changelog.md'
   else
     raise 'RubyGems 2.0 or newer is required to protect against' \
-      'public gem pushes.'
+          'public gem pushes.'
   end
 
   # Specify which files should be added to the gem when it is released.
@@ -49,15 +45,5 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'bundler', '~> 1.17.0'
-  spec.add_development_dependency 'codecov', '~> 0.1'
-  spec.add_development_dependency 'pry', '~> 0.12'
-  spec.add_development_dependency 'rake', '~> 10.0'
-  spec.add_development_dependency 'rspec', '~> 3.0'
-  spec.add_development_dependency 'rspec-benchmark', '~> 0.5.0'
-  spec.add_development_dependency 'rspec-collection_matchers', '~> 1.1.0'
-  spec.add_development_dependency 'rubocop', '~> 0.67.0'
-  spec.add_development_dependency 'rubocop-performance', '~> 1.1.0'
-  spec.add_development_dependency 'simplecov', '~> 0.16.0'
-  spec.add_development_dependency 'simplecov-console', '~> 0.4.0'
+  spec.metadata['rubygems_mfa_required'] = 'true'
 end

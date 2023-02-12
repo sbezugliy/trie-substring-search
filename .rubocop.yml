@@ -1,3 +1,15 @@
+
+require:
+  - rubocop
+  - rubocop-rspec
+  - rubocop-performance
+  - rubocop-md
+  - rubocop-rake
+
+AllCops:
+  TargetRubyVersion: 3.1
+  NewCops: enable
+
 Metrics/BlockLength:
   Max: 250
   Include:

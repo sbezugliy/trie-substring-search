@@ -3,7 +3,7 @@ name: default
 
 steps:
   - name: install
-    image: ruby
+    image: ruby:3.2.0
     volumes:
       - name: bundle
         path: /usr/local/bundle

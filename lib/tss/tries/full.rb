@@ -26,7 +26,7 @@ module TSS
       # Arguments:
       #   text: (String)
       def parse(text)
-        text = text.to_s.split('')
+        text = text.to_s.chars
         vm = vertex_map(text) { :vertex }
         exec_branches(text, vm).flatten.compact
       end
@@ -42,7 +42,7 @@ module TSS
       #   vertex: (TSS::Vertex) - ending vertex of chain of letters
       def backtrace_to_word(vertex)
         if vertex.end_indexes.empty?
-          raise 'Argument should be ending vertex of chain, and contain at'\
+          raise 'Argument should be ending vertex of chain, and contain at' \
                 'least one value in the array of end_indexes attribute'
         else
           chain = backtrace(vertex)
@@ -67,7 +67,7 @@ module TSS
       def exec_branches(text, vertex_map)
         vertex_map.map do |b|
           b[:indexes].map do |index|
-            search(b[:key], text[index + 1..-1])
+            search(b[:key], text[index + 1..])
           end
         end
       end
@@ -80,7 +80,7 @@ module TSS
         return result if vertex.children.empty?
 
         ending = search_rest(vertex, text)
-        !ending.empty? ? (result + ending) : result
+        ending.empty? ? result : (result + ending)
       end
 
       def search_rest(vertex, text)
@@ -112,7 +112,7 @@ module TSS
       end
 
       def backtrace(vertex)
-        result = !vertex.nil? ? [vertex] : []
+        result = vertex.nil? ? [] : [vertex]
         until vertex.parent.nil?
           result << vertex.parent unless vertex.parent.char.nil?
           vertex = vertex.parent
