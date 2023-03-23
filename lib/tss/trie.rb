@@ -67,8 +67,8 @@ module TSS
 
     def trie_symbol(type)
       return :Full if type == :full
-      return :AC if type == :aho_corasick
-      return :Flat if type == :flat
+      # return :AC if type == :aho_corasick
+      # return :Flat if type == :flat
 
       raise ArgumentError, 'Wrong trie type. Possible is: :full, :flat or \
       :aho_corasick'

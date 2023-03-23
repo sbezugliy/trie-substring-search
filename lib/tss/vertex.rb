@@ -64,7 +64,7 @@ module TSS
     end
 
     ##
-    # Adds reference to the linked vertexes
+    # Adds reference to linked vertexes
     def add_link(vertex, end_index = nil)
       @links << TSS::Link.new(vertex, end_index)
     end

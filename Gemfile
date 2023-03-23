@@ -21,3 +21,11 @@ gem 'rubocop-rake'
 gem 'rubocop-rspec'
 gem 'simplecov'
 gem 'simplecov-console'
+
+if ENV["GEM_ENV"]=="development"
+  gem 'trie-base', path: '../trie-base'
+  gem 'trie-structures', path: '../trie-structures'
+else
+  gem 'trie-base', git: 'https://github.com/sbezugliy/trie-base.git', tag: 'v0.1.1.0'
+  gem 'trie-structures', git: 'https://github.com/sbezugliy/trie-structures.git', tag: 'v0.1.1.0'
+end

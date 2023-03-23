@@ -5,6 +5,8 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/94c864de2611aedac431/maintainability)](https://codeclimate.com/github/sbezugliy/trie-substring-search/maintainability)
 [![codecov](https://codecov.io/gh/sbezugliy/trie-substring-search/branch/master/graph/badge.svg)](https://codecov.io/gh/sbezugliy/trie-substring-search)
 
+![Sergey Bezugliy GitHub stats](https://github-readme-stats.vercel.app/api?username=sbezugliy&show_icons=true&theme=radical)
+
 ## Installation
 
 Implementation of text syntax analyzer, which represents text as non symetric trie of chars or substrings by dictionary or list of keywords. Similar to Aho-Corasick algorithm, but with modifications, there is removed suffixes and added recovering text from the trie.
